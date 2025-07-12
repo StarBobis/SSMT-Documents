@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "SSMT"
-  text: "基于3Dmigoto的模型提取与Mod制作工具"
+  text: "——基于 3Dmigoto 的模型提取与 Mod 制作工具"
   tagline: 有趣的Mod制作体验
   image:
     src: /background.png

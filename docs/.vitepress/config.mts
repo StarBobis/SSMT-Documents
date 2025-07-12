@@ -237,7 +237,7 @@ export default defineConfig({
     },
 
     footer: {
-        copyright: 'By <a href="https://github.com/Xeon-acid">Perxenic Acid</a>、<a href="https://github.com/StarBobis">NicoMico</a>'
+        copyright: 'By <a href="https://github.com/StarBobis">NicoMico</a>, <a href="https://github.com/Xeon-acid">Perxenic Acid</a>'
     },
 
     socialLinks: [

@@ -3,7 +3,19 @@
 ## 初始化步骤
 把项目克隆到本地，或者直接创建新项目。
 
-需要 npm 工具，自行下载安装。
+需要 npm 工具，自行下载安装 https://nodejs.org/en/download/。
+
+第一次安装的话，安装完需要重启VSCode才能在VSCode的Terminal中使用npm命令。
+
+如果是新电脑，可能会提示：
+
+npm : 无法加载文件 D:\Softs\NodeJS\npm.ps1，因为在此系统上禁止运行脚本。
+有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。
+
+解决方案：管理员权限运行PowerShell，输入如下命令并运行：
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
 
 首先安装一下 VitePress：
 

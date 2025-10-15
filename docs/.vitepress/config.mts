@@ -20,7 +20,7 @@ export default defineConfig({
       { 
         text: '各游戏常见问题',
         items: [
-          { text: 'GI', link: '/Tutorials/Games/GI/Mod导致报错弹窗问题/Mod导致报错弹窗问题' },
+          // { text: 'GI', link: '/Tutorials/Games/GI/Mod导致报错弹窗问题/Mod导致报错弹窗问题' },
           { text: 'HI3', link: '/Tutorials/Games/HI3/崩坏三角色轮廓线修复/崩坏三角色轮廓线修复' },
           { text: 'HSR', link: '/Tutorials/Games/HSR/UV2是干什么的/UV2是干什么的' },
           { text: 'ZZZ', link: '/Tutorials/Games/ZZZ/Mod法线贴图错误问题/Mod法线贴图错误问题' },
@@ -100,16 +100,16 @@ export default defineConfig({
     ],
 
       '/Tutorials/Games/':[
-        {
-          text: 'GI',
-          items: [
-            { text: 'Mod变成一坨', link: '/Tutorials/Games/GI/Mod变成一坨/Mod变成一坨' },
-            { text: 'COLOR不同导致Mod无法显示', link: '/Tutorials/Games/GI/COLOR不同导致Mod无法显示/COLOR不同导致Mod无法显示' },
-            { text: '原神角色轮廓线修复', link: '/Tutorials/Games/GI/原神角色轮廓线修复/原神角色轮廓线修复' },
-            { text: '原神脸部隐藏问题', link: '/Tutorials/Games/GI/原神脸部隐藏问题/原神脸部隐藏问题' },
+        // {
+        //   text: 'GI',
+        //   items: [
+        //     { text: 'Mod变成一坨', link: '/Tutorials/Games/GI/Mod变成一坨/Mod变成一坨' },
+        //     { text: 'COLOR不同导致Mod无法显示', link: '/Tutorials/Games/GI/COLOR不同导致Mod无法显示/COLOR不同导致Mod无法显示' },
+        //     { text: '原神角色轮廓线修复', link: '/Tutorials/Games/GI/原神角色轮廓线修复/原神角色轮廓线修复' },
+        //     { text: '原神脸部隐藏问题', link: '/Tutorials/Games/GI/原神脸部隐藏问题/原神脸部隐藏问题' },
           
-          ]
-        },
+        //   ]
+        // },
         {
           text: 'HI3',
           items: [

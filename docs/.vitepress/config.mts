@@ -178,8 +178,6 @@ export default defineConfig({
         items: [
           { text: 'Vertex Color Master', link: '/Tutorials/Tools/Vertex Color Master/Vertex Color Master' },
           { text: 'Material Combiner', link: '/Tutorials/Tools/Material Combiner/Material Combiner' },
-          { text: 'Paint.net', link: '/Tutorials/Tools/Paint.net/Paint.net' },
-          { text: 'Photoshop', link: '/Tutorials/Tools/Photoshop/Photoshop' },
           { text: 'Handy Weight Edit', link: '/Tutorials/Tools/Handy Weight Edit/Handy Weight Edit' },
           { text: 'Fluid Painter', link: '/Tutorials/Tools/Fluid Painter NSFW/Fluid Painter' },
           { text: 'F2 Addon', link: '/Tutorials/Tools/F2 Addon/F2 Addon' },
@@ -200,7 +198,6 @@ export default defineConfig({
             { text: '常用链接', link: '/Tutorials/3Dmigoto/常用链接/常用链接' },
             { text: '跨IB渲染教程', link: '/Tutorials/3Dmigoto/跨IB渲染教程/跨IB渲染教程' },
             { text: '3Dmigoto在手游上使用', link: '/Tutorials/3Dmigoto/3Dmigoto在手游上使用/3Dmigoto在手游上使用' },
-            { text: 'DDS贴图格式', link: '/Tutorials/3Dmigoto/DDS贴图格式/DDS贴图格式' },
 
             { text: 'SmoothMotion不兼容问题', link: '/Tutorials/3Dmigoto/SmoothMotion不兼容问题/SmoothMotion不兼容问题' },
             { text: '新版本驱动导致无法注入问题', link: '/Tutorials/3Dmigoto/新版本驱动导致无法注入问题/新版本驱动导致无法注入问题' },

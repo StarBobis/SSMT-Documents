@@ -176,12 +176,9 @@ export default defineConfig({
       '/Tutorials/Tools/':[{
         text: '常见问题',
         items: [
-          { text: 'Vertex Color Master', link: '/Tutorials/Tools/Vertex Color Master/Vertex Color Master' },
-          { text: 'Material Combiner', link: '/Tutorials/Tools/Material Combiner/Material Combiner' },
           { text: 'Handy Weight Edit', link: '/Tutorials/Tools/Handy Weight Edit/Handy Weight Edit' },
           { text: 'Fluid Painter', link: '/Tutorials/Tools/Fluid Painter NSFW/Fluid Painter' },
           { text: 'F2 Addon', link: '/Tutorials/Tools/F2 Addon/F2 Addon' },
-          { text: '多个Mod如何合并为一个按键切换Mod', link: '/Tutorials/Tools/多个Mod如何合并为一个按键切换Mod/多个Mod如何合并为一个按键切换Mod' },
           
         ]
       }],

@@ -49,10 +49,7 @@ export default defineConfig({
         text: 'SSMT文档',
         items: [
           { text: 'SSMT介绍', link: '/Tutorials/SSMT/SSMT介绍/SSMT介绍' },
-          { text: '(1)SSMT安装教程', link: '/Tutorials/SSMT/(1)SSMT安装教程/SSMT安装教程' },
           { text: '(2)SSMT Blender插件安装教程', link: '/Tutorials/SSMT/(2)SSMT Blender插件安装教程/SSMT的Blender插件安装教程' },
-          { text: '(3)SSMT运行日志', link: '/Tutorials/SSMT/(3)SSMT运行日志/SSMT运行日志' },
-          { text: '(4)找不到数据类型解决办法', link: '/Tutorials/SSMT/(4)找不到数据类型解决办法/找不到数据类型解决办法' },
           { text: '(5)提取的模型导入后UV错误', link: '/Tutorials/SSMT/(5)提取的模型导入后UV错误/提取的模型导入后UV错误' },
           { text: '(6)Dump直接卡到游戏掉线', link: '/Tutorials/SSMT/(6)Dump直接卡到游戏掉线/Dump直接卡到游戏掉线' },
           { text: '(7)SSMT使用流程', link: '/Tutorials/SSMT/(7)SSMT使用流程/SSMT使用流程' },
@@ -261,7 +258,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/StarBobis/SSMT' },
-      { icon: 'discord', link: 'https://discord.gg/sMdsGAptss' }
+      { icon: 'discord', link: 'https://discord.gg/8fKGpFU9KZ' }
     ]
   }
 })

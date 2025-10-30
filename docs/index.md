@@ -14,9 +14,6 @@ hero:
       text: SSMT下载地址
       link: https://github.com/StarBobis/SSMT
     - theme: alt
-      text: SSMT-Package下载地址
-      link: https://github.com/StarBobis/SSMT-Package
-    - theme: alt
       text: SSMT的Blender插件下载地址
       link: https://github.com/StarBobis/TheHerta
 

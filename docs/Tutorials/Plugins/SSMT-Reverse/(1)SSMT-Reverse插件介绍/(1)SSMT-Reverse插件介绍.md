@@ -1,17 +1,16 @@
-# SSMT-Reverse插件
+# 3Dmigoto-Sword-Lv5插件
 
-SSMT-Reverse插件，其实就是我们的3Dmigoto-Sword-Lv5，因为界面整合到了SSMT中，所以现在改名为SSMT-Reverse插件了。
-
-3Dmigoto-Sword-Lv5是一款专业的用于将3Dmigoto Mod里的模型提取出来的工具，它的工作原理是全自动分析ini文件中的语法，并构建抽象的逻辑分析链进行语法分析，从ini内容中识别出Buffer文件可能组合成的模型文件。
+3Dmigoto-Sword-Lv5是一款专业的用于将3Dmigoto Mod里的模型提取出来的工具，它的工作原理是全自动分析ini文件中的语法，并构建抽象的逻辑分析链进行语法分析，从ini内容中识别出Buffer文件可能组合成的模型文件,现在作为3Dmigoto-Sword-Lv6的插件使用。
 
 可以在下方链接中赞助获取：
 
 https://afdian.com/item/ec74ee782b2f11efb5a052540025c377
 
-作为SSMT插件安装预览图
+工具的GUI界面是开源的，名为3Dmigoto-Sword-Lv6，开源地址为https://github.com/StarBobis/3Dmigoto-Sword-Lv6
 
-![alt text](image-1.png)
+其天生具备开源免费的【手动逆向】功能，此篇文档主要介绍其闭源插件3Dmigoto-Sword-Lv5中更加方便的一键逆向。
 
+![alt text](image-2.png)
 
 # 功能强大
 - 无需开启游戏，只要获取到Mod文件，就能一键分析ini的方式把Mod里的模型逆向还原为Mod文件。
@@ -31,7 +30,7 @@ https://afdian.com/item/ec74ee782b2f11efb5a052540025c377
 - 高度自动化，全是一键逆向，操作简单快捷，节省大量无效的浪费时间。
 - 支持复杂Mod全自动解析，几千行的分支切换类型Mod也能做到一键全自动化逆向，自动化解析已经持续更新了3年左右了，功能超越市面上所有开源逆向脚本。
 
-工具需要激活后才可以使用，赞助后可联系我进行激活，每份赞助只提供一台设备进行激活，更换设备时可找我重新激活更换绑定，请避免过于频繁的更换绑定。
+3Dmigoto-Sword-Lv5.exe需要激活后才可以使用，赞助后可联系我进行激活，每份赞助只提供一台设备进行激活，更换设备时可找我重新激活更换绑定，请避免过于频繁的更换绑定。
 
 
 

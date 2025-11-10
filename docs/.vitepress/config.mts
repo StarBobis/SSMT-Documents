@@ -49,6 +49,7 @@ export default defineConfig({
         text: 'SSMT文档',
         items: [
           { text: 'SSMT介绍', link: '/Tutorials/SSMT/SSMT介绍/SSMT介绍' },
+          { text: '(1)SSMT安装教程', link: '/Tutorials/SSMT/SSMT介绍/SSMT介绍' },
           { text: '(2)SSMT Blender插件安装教程', link: '/Tutorials/SSMT/(2)SSMT Blender插件安装教程/SSMT的Blender插件安装教程' },
           { text: '(5)提取的模型导入后UV错误', link: '/Tutorials/SSMT/(5)提取的模型导入后UV错误/提取的模型导入后UV错误' },
           { text: '(6)Dump直接卡到游戏掉线', link: '/Tutorials/SSMT/(6)Dump直接卡到游戏掉线/Dump直接卡到游戏掉线' },
@@ -61,7 +62,6 @@ export default defineConfig({
           { text: '同时使用 d3dx 与 SSMT', link: '/Tutorials/SSMT/同时使用 d3dx 与 SSMT/同时使用 d3dx 与 SSMT' },
           { text: '其它游戏使用SSMT作为启动器', link: '/Tutorials/SSMT/其它游戏使用SSMT作为启动器/其它游戏使用SSMT作为启动器' },  
           { text: '无法打开SSMT', link: '/Tutorials/SSMT/无法打开SSMT/无法打开SSMT' },  
-          
           { text: 'MMT安装配置教程', link: '/Tutorials/SSMT/MMT安装配置教程/MMT安装配置教程' },  
 
           
@@ -223,8 +223,6 @@ export default defineConfig({
           [
             { text: '(1)SSMT-Reverse插件介绍', link: '/Tutorials/Plugins/SSMT-Reverse/(1)SSMT-Reverse插件介绍/(1)SSMT-Reverse插件介绍' },
             { text: '(2)安装插件', link: '/Tutorials/Plugins/SSMT-Reverse/(2)安装插件/(2)安装插件' },
-            { text: '(3)逆向出来的模型如何导入Blender', link: '/Tutorials/Plugins/SSMT-Reverse/(3)逆向出来的模型如何导入Blender/(3)逆向出来的模型如何导入Blender' },
-            { text: '(4)逆向出来的Mod模型如何上贴图', link: '/Tutorials/Plugins/SSMT-Reverse/(4)逆向出来的Mod模型如何上贴图/(4)逆向出来的Mod模型如何上贴图' },
             { text: '(5)批量转换贴图格式', link: '/Tutorials/Plugins/SSMT-Reverse/(5)批量转换贴图格式/(5)批量转换贴图格式' },
             { text: '(6)手动逆向功能', link: '/Tutorials/Plugins/SSMT-Reverse/(6)手动逆向功能/(6)手动逆向功能' },
             { text: '(7)更新日志', link: '/Tutorials/Plugins/SSMT-Reverse/(7)更新日志/(7)更新日志' },

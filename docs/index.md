@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: SSMT下载地址
-      link: https://github.com/StarBobis/SSMT
+      link: https://github.com/StarBobis/SSMT3
     - theme: alt
       text: SSMT的Blender插件下载地址
-      link: https://github.com/StarBobis/TheHerta
+      link: https://github.com/StarBobis/TheHerta3
 
 
 features:

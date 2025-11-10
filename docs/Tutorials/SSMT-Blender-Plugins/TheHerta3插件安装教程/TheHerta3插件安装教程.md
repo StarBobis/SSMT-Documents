@@ -3,7 +3,7 @@ SSMT 不严格要求 Blender 版本，最低支持 [Blender 3.6 LTS](https://www
 
 # SSMT 的 Blender 插件安装教程
 
-前往 [GitHub 仓库](https://github.com/StarBobis/TheHerta)，仿照 SSMT 安装教程，下载 Release 中的最新插件版本到任选位置：
+前往 [GitHub 仓库](https://github.com/StarBobis/TheHerta3)，仿照 SSMT 安装教程，下载 Release 中的最新插件版本到任选位置：
 
 ![1752128274140](image/SSMT的Blender插件安装教程/1752128274140.png)
 

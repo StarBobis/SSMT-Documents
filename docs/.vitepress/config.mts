@@ -13,7 +13,6 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
-      { text: 'SSMT文档', link: '/Tutorials/SSMT/SSMT介绍/SSMT介绍' },
       { text: 'SSMT Blender插件文档', link: '/Tutorials/SSMT-Blender-Plugins/(1)分支集合架构/分支集合架构' },
       { text: '常见问题', link: '/Tutorials/Tools/Index.md' },
       { text: '3Dmigoto', link: '/Tutorials/3Dmigoto/3Dmigoto介绍/3Dmigoto介绍' },
@@ -44,52 +43,19 @@ export default defineConfig({
     ],
 
     sidebar: {
-      '/Tutorials/SSMT/':[
-      {
-        text: 'SSMT文档',
-        items: [
-          { text: 'SSMT介绍', link: '/Tutorials/SSMT/SSMT介绍/SSMT介绍' },
-          { text: '(1)SSMT安装教程', link: '/Tutorials/SSMT/SSMT介绍/SSMT介绍' },
-          { text: '(2)SSMT Blender插件安装教程', link: '/Tutorials/SSMT/(2)SSMT Blender插件安装教程/SSMT的Blender插件安装教程' },
-          { text: '(5)提取的模型导入后UV错误', link: '/Tutorials/SSMT/(5)提取的模型导入后UV错误/提取的模型导入后UV错误' },
-          { text: '(6)Dump直接卡到游戏掉线', link: '/Tutorials/SSMT/(6)Dump直接卡到游戏掉线/Dump直接卡到游戏掉线' },
-          { text: '(7)SSMT使用流程', link: '/Tutorials/SSMT/(7)SSMT使用流程/SSMT使用流程' },
-          { text: '(8)Symlink特性', link: '/Tutorials/SSMT/(8)Symlink特性/Symlink特性' },
-          { text: '(9)贴图格式转换', link: '/Tutorials/SSMT/(9)贴图格式转换/贴图格式转换' },
-          { text: '(10)开关红字报错显示', link: '/Tutorials/SSMT/(10)开关红字报错显示/开关红字报错显示' },
-          { text: '检查加载器版本更新', link: '/Tutorials/SSMT/检查加载器版本更新/检查加载器版本更新' },
-          { text: '背景图设置方法', link: '/Tutorials/SSMT/背景图设置方法/背景图设置方法' },  
-          { text: '同时使用 d3dx 与 SSMT', link: '/Tutorials/SSMT/同时使用 d3dx 与 SSMT/同时使用 d3dx 与 SSMT' },
-          { text: '其它游戏使用SSMT作为启动器', link: '/Tutorials/SSMT/其它游戏使用SSMT作为启动器/其它游戏使用SSMT作为启动器' },  
-          { text: '无法打开SSMT', link: '/Tutorials/SSMT/无法打开SSMT/无法打开SSMT' },  
-          { text: 'MMT安装配置教程', link: '/Tutorials/SSMT/MMT安装配置教程/MMT安装配置教程' },  
-
-          
-        ]
-      }
-    
-    ],
-
     '/Tutorials/SSMT-Blender-Plugins/':[
       {
         text: 'SSMT Blender插件文档',
         items: [
           { text: '(1)分支集合架构', link: '/Tutorials/SSMT-Blender-Plugins/(1)分支集合架构/分支集合架构' },
-          
           { text: '★平滑法线存TEXCOORD1.xy', link: '/Tutorials/SSMT-Blender-Plugins/★平滑法线存TEXCOORD1.xy/★平滑法线存TEXCOORD1.xy' },
           { text: '★投影TEXCOORD2.xy(近似)', link: '/Tutorials/SSMT-Blender-Plugins/★投影TEXCOORD2.xy(近似)/★投影TEXCOORD2.xy(近似)' },
-          { text: 'Mod属性面板', link: '/Tutorials/SSMT-Blender-Plugins/Mod属性面板/Mod属性面板' },
-
-
           
         ]
       },
       {
         text: 'Blender',
         items: [
-          { text: 'Blender支持DDS格式贴图', link: '/Tutorials/SSMT-Blender-Plugins/Blender支持DDS格式贴图/Blender支持DDS格式贴图' },
-          { text: 'ScreenshotKeys插件', link: '/Tutorials/SSMT-Blender-Plugins/ScreenshotKeys插件/ScreenshotKeys插件' },
-          { text: '模型单面贴图问题', link: '/Tutorials/SSMT-Blender-Plugins/模型单面贴图问题/模型单面贴图问题' },
           { text: '模型细分后权重出问题', link: '/Tutorials/SSMT-Blender-Plugins/模型细分后权重出问题/模型细分后权重出问题' },
           { text: '骨骼约束如何删除', link: '/Tutorials/SSMT-Blender-Plugins/骨骼约束如何删除/骨骼约束如何删除' },
         ]

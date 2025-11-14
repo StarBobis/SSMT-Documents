@@ -13,8 +13,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
-      { text: 'SSMT Blender插件文档', link: '/Tutorials/SSMT-Blender-Plugins/(1)分支集合架构/分支集合架构' },
-      { text: '常见问题', link: '/Tutorials/Tools/Index.md' },
+      { text: 'SSMT Blender插件文档', link: '/Tutorials/SSMT-Blender-Plugins/ToggleArchitecture/ToggleArchitecture' },
       { text: '3Dmigoto', link: '/Tutorials/3Dmigoto/3Dmigoto介绍/3Dmigoto介绍' },
       { 
         text: '各游戏常见问题',
@@ -47,7 +46,7 @@ export default defineConfig({
       {
         text: 'SSMT Blender插件文档',
         items: [
-          { text: '(1)分支集合架构', link: '/Tutorials/SSMT-Blender-Plugins/(1)分支集合架构/分支集合架构' },
+          { text: '(1)分支集合架构', link: '/Tutorials/SSMT-Blender-Plugins/ToggleArchitecture/ToggleArchitecture' },
           { text: '★平滑法线存TEXCOORD1.xy', link: '/Tutorials/SSMT-Blender-Plugins/★平滑法线存TEXCOORD1.xy/★平滑法线存TEXCOORD1.xy' },
           { text: '★投影TEXCOORD2.xy(近似)', link: '/Tutorials/SSMT-Blender-Plugins/★投影TEXCOORD2.xy(近似)/★投影TEXCOORD2.xy(近似)' },
           

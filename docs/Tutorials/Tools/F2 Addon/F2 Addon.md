@@ -10,8 +10,7 @@ https://extensions.blender.org/add-ons/f2/
 
 略
 
-# 使用
-
+# 使用 
 1. 编辑模式
 1. 选中镂空面
 1. 按下 `F`

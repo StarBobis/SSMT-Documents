@@ -1,4 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
+import type { EnhanceAppContext } from 'vitepress'
 import { h } from 'vue'
 import './index.css'
 import { initMeteorEffect } from './meteors'
@@ -12,7 +13,7 @@ export default {
       'nav-bar-content-after': () => h(BGMPlayer)
     })
   },
-  enhanceApp({ app, router, siteData }) {
+  enhanceApp({ app, router, siteData }: EnhanceAppContext) {
     // 在客户端挂载后添加视频背景
     if (typeof window !== 'undefined') {
       const base = siteData.value.base || '/'
@@ -26,7 +27,7 @@ export default {
       window.addEventListener('load', initVideo)
 
       // 路由切换
-      router.onAfterRouteUpdate = () => {
+      router.onAfterRouteChange = () => {
         initVideo()
       }
       

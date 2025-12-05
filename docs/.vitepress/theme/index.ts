@@ -1,9 +1,17 @@
 import DefaultTheme from 'vitepress/theme'
+import { h } from 'vue'
 import './index.css'
+import { initMeteorEffect } from './meteors'
+import BGMPlayer from './components/BGMPlayer.vue'
 
 // 自定义主题
 export default {
   extends: DefaultTheme,
+  Layout() {
+    return h(DefaultTheme.Layout, null, {
+      'nav-bar-content-after': () => h(BGMPlayer)
+    })
+  },
   enhanceApp({ app, router, siteData }) {
     // 在客户端挂载后添加视频背景
     if (typeof window !== 'undefined') {
@@ -11,6 +19,7 @@ export default {
       
       const initVideo = () => {
         addVideoBackground(base)
+        initMeteorEffect()
       }
 
       // 监听页面加载

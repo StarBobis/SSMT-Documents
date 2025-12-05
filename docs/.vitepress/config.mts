@@ -8,9 +8,8 @@ export default defineConfig({
   title: "SSMT-Documents",
   description: "SSMT's Documtns",
   
-  // 强制使用深色主题
-  appearance: 'force-dark',
-  
+  appearance: 'dark',
+
   themeConfig: {
     // 提供全局搜索框
     search: { provider: 'local' },

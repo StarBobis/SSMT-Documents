@@ -65,8 +65,10 @@ function addVideoBackground(base: string) {
     object-fit: cover;
     z-index: -1;
     opacity: 0.3;
-    filter: blur(1px);
+    /* filter: blur(1px); 移除模糊以提高性能 */
     pointer-events: none;
+    will-change: transform; /* 启用硬件加速 */
+    transform: translateZ(0); /* 强制 GPU 渲染 */
   `
 
   // 错误处理和自动播放尝试

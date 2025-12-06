@@ -20,7 +20,7 @@ export default defineConfig({
     sidebar,
 
     footer: {
-        copyright: 'By <a href="https://github.com/StarBobis">NicoMico</a>, <a href="https://github.com/Xeon-acid">Perxenic Acid</a>'
+        copyright: 'By <a href="https://github.com/StarBobis">NicoMico</a>, <a href="https://github.com/Xeon-acid">Perxenic Acid</a>, <a href="https://github.com/yixiamoyou">wincat</a>'
     },
 
     socialLinks: [

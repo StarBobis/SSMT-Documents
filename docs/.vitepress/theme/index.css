@@ -912,18 +912,26 @@ html {
   background: linear-gradient(90deg, rgba(167, 85, 247, 0.1), transparent);
   border-radius: 0 8px 8px 0;
   padding: 16px 24px;
-  color: #d8b4fe;
+  color: #581c87;
   font-style: italic;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
+.dark .vp-doc blockquote {
+  color: #d8b4fe;
+}
+
 .vp-doc blockquote:hover {
   border-left-color: #00c6ff;
   background: linear-gradient(90deg, rgba(0, 198, 255, 0.1), transparent);
-  color: #bae6fd;
+  color: #0369a1;
   transform: translateX(5px);
+}
+
+.dark .vp-doc blockquote:hover {
+  color: #bae6fd;
 }
 
 .vp-doc blockquote::before {
@@ -932,8 +940,12 @@ html {
   top: -10px;
   right: 10px;
   font-size: 4em;
-  color: rgba(255, 255, 255, 0.05);
+  color: rgba(0, 0, 0, 0.05);
   font-family: serif;
+}
+
+.dark .vp-doc blockquote::before {
+  color: rgba(255, 255, 255, 0.05);
 }
 
 ::selection {

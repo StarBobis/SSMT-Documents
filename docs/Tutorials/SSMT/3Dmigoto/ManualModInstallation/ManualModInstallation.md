@@ -1,16 +1,21 @@
-# 解压安装3Dmigoto
+# 📦 解压安装 3Dmigoto
 
-获取一份 `3DMigoto`，解压到任选路径，下面以解压至桌面为例：
+获取一份 `3DMigoto`，解压到任选路径。下面以解压至桌面为例：
 
 ![alt text](image.png)
 
-# 手动配置路径
+## 🛠️ 手动配置路径
 
-打开 `d3dx.ini`，找到 `target = `，将对应的路径改为需要注入的目标程序路径：
+1. 打开 `d3dx.ini` 文件。
+2. 找到 `target =`，将对应的路径改为需要注入的目标程序路径：
+
 ![alt text](image-3.png)
 
-保存该文件，重新打开 `3Dmigoto Loader.exe` 即可使用。
+3. 保存该文件，重新打开 `3Dmigoto Loader.exe` 即可使用。
+
 ![alt text](image-4.png)
+
+### ⚙️ 配置文件参数详解
 
 此处另外存在若干可供配置的参数，如下为原始叙述：
 
@@ -53,39 +58,30 @@ require_admin = true
 
 这些参数的部分通俗解释：
 
-| 参数       | 含义 |
-| ---------- | ---- |
-| `target`          |   目标需注入游戏的进程路径    |
-| `module`          |   一般填写 `d3d11.dll` 即可   |
-| `require_admin`   |   一般填写 `true` 即可    |
-| `launch`          |   `3DMigoto Loader.exe` 启动后将自动唤起的程序路径    |
-| `delay`           |   `3DMigoto Loader.exe` 运行后的自动关闭延迟   |
+| 参数 | 含义 |
+| :--- | :--- |
+| `target` | 目标需注入游戏的进程路径 |
+| `module` | 一般填写 `d3d11.dll` 即可 |
+| `require_admin` | 一般填写 `true` 即可 |
+| `launch` | `3DMigoto Loader.exe` 启动后将自动唤起的程序路径 |
+| `delay` | `3DMigoto Loader.exe` 运行后的自动关闭延迟 |
 
-<!-- - target = 填写目标游戏的进程路径
-- module = 一般填写d3d11.dll
-- require_admin 一般填写true
-- launch = 填写3Dmigoto Loader.exe运行后自动调起的程序路径
-- delay = 填写3Dmigoto Loader.exe在运行后，经过多少秒自动退出 -->
+> ⚠️ **注意**：尽管原初的 3DMigoto 规定了这些参数，但现代的基于 3DMigoto 的 Mod 加载器（包括 SSMT 和 [XXMI](https://github.com/SpectrumQT/XXMI-Launcher)）部分魔改了这些参数，删掉了无用参数 `delay`，`module`，`require_admin`，并增加了部分参数例如 `launch_args`。所以这里仅供参考。
 
-尽管原初的 3DMigoto 规定了这些参数，但现代的基于 3DMigoto 的 Mod 加载器，包括 SSMT 和 [XXMI](https://github.com/SpectrumQT/XXMI-Launcher)，部分魔改了这些参数，删掉了无用参数 `delay`，`module`，`require_admin`，如，增加了部分参数例如 `launch_args`，
+## 📂 手动安装 Mod 到 3Dmigoto
 
-
-所以这里仅供参考。
-
-# 手动安装Mod到3Dmigoto
-
-把 Mod 文件或 Mod 文件夹**而非 `.zip` 或 `.rar` 压缩包**放到 `Mods` 文件夹中即：
+把 Mod 文件或 Mod 文件夹（**而非 `.zip` 或 `.rar` 压缩包**）放到 `Mods` 文件夹中即：
 
 ![alt text](image-1.png)
 
 随后启动 3Dmigoto 并启动游戏即可。
 
-# 为什么是安装到Mods文件夹中？
+### ❓ 为什么是安装到 Mods 文件夹中？
 
 3Dmigoto 的 Mod 安装到什么地方，由 `d3dx.ini` 中的 `include` 参数控制：
 
 ![alt text](image-2.png)
 
-如上图，原始 3Dmigoto 一般初始携带一个 Mods 文件夹，同时默认配置了 `include = Mods`。
+如上图，原始 3Dmigoto 一般初始携带一个 `Mods` 文件夹，同时默认配置了 `include = Mods`。
 
-所以按照约定俗成的使用方法，我们会把 Mod 文件放到 Mods 文件夹中。
+所以按照约定俗成的使用方法，我们会把 Mod 文件放到 `Mods` 文件夹中。

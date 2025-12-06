@@ -150,15 +150,15 @@ export const sidebar = {
         [
           { text: '(1)SSMT-Reverse插件介绍', link: '/Tutorials/Plugins/SSMT-Reverse/Introduction/Introduction' },
           { text: '(2)安装插件', link: '/Tutorials/Plugins/SSMT-Reverse/Installation/Installation' },
-          { text: '(5)批量转换贴图格式', link: '/Tutorials/Plugins/SSMT-Reverse/BatchTextureConversion/BatchTextureConversion' },
-          { text: '(6)手动逆向功能', link: '/Tutorials/Plugins/SSMT-Reverse/ManualReverse/ManualReverse' },
-          { text: '(7)更新日志', link: '/Tutorials/Plugins/SSMT-Reverse/Changelog/Changelog' },
-          { text: '常见问题', link: '/Tutorials/Plugins/SSMT-Reverse/FAQ/FAQ' },
+          { text: '(3)批量转换贴图格式', link: '/Tutorials/Plugins/SSMT-Reverse/BatchTextureConversion/BatchTextureConversion' },
+          { text: '(4)手动逆向功能', link: '/Tutorials/Plugins/SSMT-Reverse/ManualReverse/ManualReverse' },
+          { text: '(5)更新日志', link: '/Tutorials/Plugins/SSMT-Reverse/Changelog/Changelog' },
+          { text: '(6)常见问题', link: '/Tutorials/Plugins/SSMT-Reverse/FAQ/FAQ' },
           { text: '☆远距离和近距离放一起的NPC Mod无法一键逆向', link: '/Tutorials/Plugins/SSMT-Reverse/NPCModReverseIssue/NPCModReverseIssue' },
-          { text: 'ResourceVBList.size()为4的Mod', link: '/Tutorials/Plugins/SSMT-Reverse/ResourceVBListSize4/ResourceVBListSize4' },
+          { text: '☆ResourceVBList.size()为4的Mod', link: '/Tutorials/Plugins/SSMT-Reverse/ResourceVBListSize4/ResourceVBListSize4' },
           { text: '☆跨IB渲染的Mod逆向', link: '/Tutorials/Plugins/SSMT-Reverse/CrossIBReverse/CrossIBReverse' },
           { text: '☆原神面部Mod逆向方法', link: '/Tutorials/Plugins/SSMT-Reverse/GenshinFaceReverse/GenshinFaceReverse' },
-          { text: 'IndexBuffer和CategoryBuffer膨胀混淆技术', link: '/Tutorials/Plugins/SSMT-Reverse/BufferInflationObfuscation/BufferInflationObfuscation' },
+          { text: '☆IndexBuffer和CategoryBuffer膨胀混淆技术', link: '/Tutorials/Plugins/SSMT-Reverse/BufferInflationObfuscation/BufferInflationObfuscation' },
         ]
       },
       {

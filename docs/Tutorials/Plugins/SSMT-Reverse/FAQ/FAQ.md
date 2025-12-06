@@ -30,7 +30,7 @@ Mod逆向只是拿到了模型，拿到了模型剩下的你想干嘛都不是�
 
 SSMT下载地址：
 
-https://github.com/StarBobis/SSMT
+https://github.com/StarBobis/SSMT3
 
 XXMITools插件下载地址（老外的米家游戏生成Mod工具）：
 

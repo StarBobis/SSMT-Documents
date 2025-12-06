@@ -22,9 +22,17 @@ export const sidebar = {
       ]
     },
     {
+      text: 'Tools',
+      items: [
+        { text: 'Tools 首页', link: '/Tutorials/SSMT/Tools/index' },
+      ]
+    },
+    {
       text: 'Blender',
       items: [
-        { text: 'Blender 教程', link: '/Tutorials/SSMT/Blender/index' },
+        { text: 'F2 Addon', link: '/Tutorials/SSMT/Blender/F2Addon/F2Addon' },
+        { text: 'Fluid Painter', link: '/Tutorials/SSMT/Blender/FluidPainter/FluidPainter' },
+        { text: 'Handy Weight Edit', link: '/Tutorials/SSMT/Blender/HandyWeightEdit/HandyWeightEdit' },
       ]
     },
     {

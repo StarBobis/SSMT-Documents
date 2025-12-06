@@ -5,8 +5,9 @@ export const nav = [
     items: [
       { text: 'SSMT3', link: '/Tutorials/SSMT/SSMT3/DownloadAndInstall/DownloadAndInstall' },
       { text: 'TheHerta3', link: '/Tutorials/SSMT/TheHerta3/TheHerta3Installation/TheHerta3Installation' },
-      { text: 'Blender', link: '/Tutorials/SSMT/Blender/index' },
-      { text: '3Dmigoto', link: '/Tutorials/SSMT/3Dmigoto/Introduction/Introduction' }
+      { text: 'Blender', link: '/Tutorials/SSMT/Blender/F2Addon/F2Addon' },
+      { text: '3Dmigoto', link: '/Tutorials/SSMT/3Dmigoto/Introduction/Introduction' },
+      { text: 'Tools', link: '/Tutorials/SSMT/Tools/index' }
     ]
   },
   { 

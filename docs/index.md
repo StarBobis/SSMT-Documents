@@ -5,10 +5,10 @@ layout: home
 hero:
   name: "SSMT"
   text: "基于3Dmigoto的模型提取与Mod制作工具"
-  tagline: 有趣的Mod制作体验
+  tagline: 为热爱而生
 
   actions:
-    - theme: brand
+    - theme: alt
       text: SSMT下载地址
       link: https://github.com/StarBobis/SSMT3
     - theme: alt

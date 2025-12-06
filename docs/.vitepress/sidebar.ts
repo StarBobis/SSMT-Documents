@@ -1,19 +1,49 @@
 export const sidebar = {
-  '/Tutorials/SSMT-Blender-Plugins/':[
+  '/Tutorials/SSMT/':[
     {
-      text: 'SSMT Blender插件文档',
+      text: 'SSMT3',
       items: [
-        { text: '(1)分支集合架构', link: '/Tutorials/SSMT-Blender-Plugins/ToggleArchitecture/ToggleArchitecture' },
-        { text: '★平滑法线存TEXCOORD1.xy', link: '/Tutorials/SSMT-Blender-Plugins/SmoothNormalToTEXCOORD1/SmoothNormalToTEXCOORD1' },
-        { text: '★投影TEXCOORD2.xy(近似)', link: '/Tutorials/SSMT-Blender-Plugins/ProjectTEXCOORD2/ProjectTEXCOORD2' },
-        
+        { text: 'SSMT3 下载与安装', link: '/Tutorials/SSMT/SSMT3/DownloadAndInstall/DownloadAndInstall' },
+      ]
+    },
+    {
+      text: 'TheHerta3',
+      items: [
+        { text: 'TheHerta3插件安装教程', link: '/Tutorials/SSMT/TheHerta3/TheHerta3Installation/TheHerta3Installation' },
+        { text: '(1)分支集合架构', link: '/Tutorials/SSMT/TheHerta3/ToggleArchitecture/ToggleArchitecture' },
+        { text: '★平滑法线存TEXCOORD1.xy', link: '/Tutorials/SSMT/TheHerta3/SmoothNormalToTEXCOORD1/SmoothNormalToTEXCOORD1' },
+        { text: '★投影TEXCOORD2.xy(近似)', link: '/Tutorials/SSMT/TheHerta3/ProjectTEXCOORD2/ProjectTEXCOORD2' },
+        { text: '模型细分后权重出问题', link: '/Tutorials/SSMT/TheHerta3/SubdivisionWeightIssue/SubdivisionWeightIssue' },
+        { text: '骨骼约束如何删除', link: '/Tutorials/SSMT/TheHerta3/RemoveBoneConstraints/RemoveBoneConstraints' },
       ]
     },
     {
       text: 'Blender',
       items: [
-        { text: '模型细分后权重出问题', link: '/Tutorials/SSMT-Blender-Plugins/SubdivisionWeightIssue/SubdivisionWeightIssue' },
-        { text: '骨骼约束如何删除', link: '/Tutorials/SSMT-Blender-Plugins/RemoveBoneConstraints/RemoveBoneConstraints' },
+        { text: 'Blender 教程', link: '/Tutorials/SSMT/Blender/index' },
+      ]
+    },
+    {
+      text: '3Dmigoto',
+      items: 
+      [
+        { text: '3Dmigoto介绍', link: '/Tutorials/SSMT/3Dmigoto/Introduction/Introduction' },
+        { text: '如何手动安装Mod', link: '/Tutorials/SSMT/3Dmigoto/ManualModInstallation/ManualModInstallation' },
+        { text: '没有小键盘如何使用Hunting界面', link: '/Tutorials/SSMT/3Dmigoto/NoNumpadHunting/NoNumpadHunting' },
+        { text: '通过贴图找IB的Hash值', link: '/Tutorials/SSMT/3Dmigoto/FindIBHashByTexture/FindIBHashByTexture' },
+        { text: '常用链接', link: '/Tutorials/SSMT/3Dmigoto/UsefulLinks/UsefulLinks' },
+        { text: '跨IB渲染教程', link: '/Tutorials/SSMT/3Dmigoto/CrossIBRendering/CrossIBRendering' },
+        { text: '3Dmigoto在手游上使用', link: '/Tutorials/SSMT/3Dmigoto/MobileUsage/MobileUsage' },
+
+        { text: 'SmoothMotion不兼容问题', link: '/Tutorials/SSMT/3Dmigoto/SmoothMotionIncompatibility/SmoothMotionIncompatibility' },
+        { text: '新版本驱动导致无法注入问题', link: '/Tutorials/SSMT/3Dmigoto/DriverInjectionIssue/DriverInjectionIssue' },
+      ]
+    },
+    {
+      text: '3Dmigoto 使用技巧',
+      items: 
+      [
+        { text: '通过贴图找IB的Hash值', link: '/Tutorials/SSMT/3Dmigoto/FindIBHashByTexture/FindIBHashByTexture' },
       ]
     }
   ],
@@ -101,34 +131,7 @@ export const sidebar = {
         
       ]
     }],
-    '/Tutorials/3Dmigoto/':
-    [
-      {
-        text: '3Dmigoto',
-        items: 
-        [
-          { text: '3Dmigoto介绍', link: '/Tutorials/3Dmigoto/Introduction/Introduction' },
-          { text: '如何手动安装Mod', link: '/Tutorials/3Dmigoto/ManualModInstallation/ManualModInstallation' },
-          { text: '没有小键盘如何使用Hunting界面', link: '/Tutorials/3Dmigoto/NoNumpadHunting/NoNumpadHunting' },
-          { text: '通过贴图找IB的Hash值', link: '/Tutorials/3Dmigoto/FindIBHashByTexture/FindIBHashByTexture' },
-          { text: '常用链接', link: '/Tutorials/3Dmigoto/UsefulLinks/UsefulLinks' },
-          { text: '跨IB渲染教程', link: '/Tutorials/3Dmigoto/CrossIBRendering/CrossIBRendering' },
-          { text: '3Dmigoto在手游上使用', link: '/Tutorials/3Dmigoto/MobileUsage/MobileUsage' },
 
-          { text: 'SmoothMotion不兼容问题', link: '/Tutorials/3Dmigoto/SmoothMotionIncompatibility/SmoothMotionIncompatibility' },
-          { text: '新版本驱动导致无法注入问题', link: '/Tutorials/3Dmigoto/DriverInjectionIssue/DriverInjectionIssue' },
-          
-          
-        ]
-      },
-      {
-        text: '使用技巧',
-        items: 
-        [
-          { text: '通过贴图找IB的Hash值', link: '/Tutorials/3Dmigoto/FindIBHashByTexture/FindIBHashByTexture' },
-        ]
-      }
-    ],
 
     '/Tutorials/Plugins/':
     [

@@ -1,7 +1,14 @@
 export const nav = [
   { text: '主页', link: '/' },
-  { text: 'SSMT Blender插件文档', link: '/Tutorials/SSMT-Blender-Plugins/ToggleArchitecture/ToggleArchitecture' },
-  { text: '3Dmigoto', link: '/Tutorials/3Dmigoto/Introduction/Introduction' },
+  { 
+    text: 'SSMT教程', 
+    items: [
+      { text: 'SSMT3', link: '/Tutorials/SSMT/SSMT3/DownloadAndInstall/DownloadAndInstall' },
+      { text: 'TheHerta3', link: '/Tutorials/SSMT/TheHerta3/TheHerta3Installation/TheHerta3Installation' },
+      { text: 'Blender', link: '/Tutorials/SSMT/Blender/index' },
+      { text: '3Dmigoto', link: '/Tutorials/SSMT/3Dmigoto/Introduction/Introduction' }
+    ]
+  },
   { 
     text: '各游戏常见问题',
     items: [

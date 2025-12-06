@@ -159,7 +159,6 @@ export const sidebar = {
           { text: '☆跨IB渲染的Mod逆向', link: '/Tutorials/Plugins/SSMT-Reverse/CrossIBReverse/CrossIBReverse' },
           { text: '☆原神面部Mod逆向方法', link: '/Tutorials/Plugins/SSMT-Reverse/GenshinFaceReverse/GenshinFaceReverse' },
           { text: 'IndexBuffer和CategoryBuffer膨胀混淆技术', link: '/Tutorials/Plugins/SSMT-Reverse/BufferInflationObfuscation/BufferInflationObfuscation' },
-          { text: '☆为什么鸣潮Mod逆向出来有两个数据类型', link: '/Tutorials/Plugins/SSMT-Reverse/WutheringWavesTwoDataTypes/WutheringWavesTwoDataTypes' },
         ]
       },
       {

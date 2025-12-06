@@ -6,6 +6,8 @@ export const sidebar = {
         { text: 'SSMT3 下载与安装', link: '/Tutorials/SSMT/SSMT3/DownloadAndInstall/DownloadAndInstall' },
         { text: '主页配置', link: '/Tutorials/SSMT/SSMT3/HomePageConfig/HomePageConfig' },
         { text: '注入3Dmigoto到游戏', link: '/Tutorials/SSMT/SSMT3/Inject3DmigotoIntoGame/Inject3DmigotoIntoGame' },
+        { text: 'SSMT运行日志', link: '/Tutorials/SSMT/SSMT3/SSMTRunLogFile/SSMTRunLogFile' },
+        { text: '找不到数据类型', link: '/Tutorials/SSMT/SSMT3/CantFindDataType/CantFindDataType' },
       ]
     },
     {

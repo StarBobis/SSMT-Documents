@@ -1,15 +1,20 @@
-首先以一个芙宁娜的Mod为例，这是文件结构：
+# 🎭 原神脸部逆向教程
+
+首先以一个芙宁娜的 Mod 为例，这是文件结构：
 
 ![alt text](image.png)
 
 ![alt text](image-1.png)
 
-可以看到，这个Mod是给芙芙添加了不同的表情，且按键可以切换：
+可以看到，这个 Mod 是给芙芙添加了不同的表情，且按键可以切换：
 
 ![alt text](image-2.png)
 
-原理是使用了CustomShader通过顶点偏移来模拟表情的形态键：
-```
+## 🧠 原理分析
+
+原理是使用了 `CustomShader` 通过顶点偏移来模拟表情的形态键：
+
+```hlsl
 struct vb0 {
     float3 position; 	// 12
     float3 normal; 		// 24
@@ -29,16 +34,13 @@ void main(uint3 DTid : SV_DispatchThreadID)
 }
 ```
 
-此时所有的.buf文件都是Position分类的数据，并且和游戏中原本脸部的Position数据仅有POSITION、NORMAL、TANGENT的位置不同。
+此时所有的 `.buf` 文件都是 `Position` 分类的数据，并且和游戏中原本脸部的 `Position` 数据仅有 `POSITION`、`NORMAL`、`TANGENT` 的位置不同。
 
-逆向步骤如下：
+## 🛠️ 逆向步骤
 
-1.去游戏里提取脸部三个部位的原模型，以此来获取它们的ib文件。
-
-2.改写fmt文件，仅保留POSITION，NORMAL，TANGENT三个元素。
-
-3.Mod里的.buf文件改名为.vb文件
-
-4.用刚才得到的.ib .fmt .vb文件放在一起，它就是一个可以被导入到Blender中的模型了。
+1.  **提取原模型**：去游戏里提取脸部三个部位的原模型，以此来获取它们的 `ib` 文件。
+2.  **修改 fmt**：改写 `fmt` 文件，仅保留 `POSITION`，`NORMAL`，`TANGENT` 三个元素。
+3.  **重命名文件**：Mod 里的 `.buf` 文件改名为 `.vb` 文件。
+4.  **组合模型**：用刚才得到的 `.ib` `.fmt` `.vb` 文件放在一起，它就是一个可以被导入到 Blender 中的模型了。
 
 

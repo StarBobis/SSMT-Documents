@@ -8,6 +8,9 @@ export const sidebar = {
         { text: '注入3Dmigoto到游戏', link: '/Tutorials/SSMT/SSMT3/Inject3DmigotoIntoGame/Inject3DmigotoIntoGame' },
         { text: 'SSMT运行日志', link: '/Tutorials/SSMT/SSMT3/SSMTRunLogFile/SSMTRunLogFile' },
         { text: '找不到数据类型', link: '/Tutorials/SSMT/SSMT3/CantFindDataType/CantFindDataType' },
+        { text: 'SSMT 版本更新', link: '/Tutorials/SSMT/SSMT3/SSMTVersionUpdate/SSMTVersionUpdate' },
+        { text: 'SSMT 支持的游戏', link: '/Tutorials/SSMT/SSMT3/SSMTSupportedGames/SSMTSupportedGames' },
+        { text: '无法打开 LOD.exe', link: '/Tutorials/SSMT/SSMT3/CantOpenLODExe/CantOpenLODExe' },
       ]
     },
     {

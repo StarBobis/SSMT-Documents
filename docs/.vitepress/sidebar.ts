@@ -185,6 +185,7 @@ export const sidebar = {
           { text: '☆IndexBuffer和CategoryBuffer膨胀混淆技术', link: '/Tutorials/Plugins/SSMT-Reverse/BufferInflationObfuscation/BufferInflationObfuscation' },
           { text: '鸣潮解包获取原骨骼来绑骨', link: '/Tutorials/Plugins/SSMT-Reverse/WutheringWavesBone/WutheringWavesBone' },
           { text: '米游系列游戏原本解包骨骼', link: '/Tutorials/Plugins/SSMT-Reverse/HoyoGamesBone/HoyoGamesBone' },
+          { text: '逆向出来的模型如何绑定骨骼？', link: '/Tutorials/Plugins/SSMT-Reverse/BindModelToBone/BindModelToBone' },
         ]
       },
       {

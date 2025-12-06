@@ -7,13 +7,13 @@ export const nav = [
       { text: 'TheHerta3', link: '/Tutorials/SSMT/TheHerta3/TheHerta3Installation/TheHerta3Installation' },
       { text: 'Blender', link: '/Tutorials/SSMT/Blender/F2Addon/F2Addon' },
       { text: '3Dmigoto', link: '/Tutorials/SSMT/3Dmigoto/Introduction/Introduction' },
-      { text: 'Tools', link: '/Tutorials/SSMT/Tools/index' }
+      { text: 'Tools', link: '/Tutorials/SSMT/Tools/PaintDotNet/PaintDotNet' }
     ]
   },
   { 
     text: '各游戏常见问题',
     items: [
-      // { text: 'GI', link: '/Tutorials/Games/GI/Mod导致报错弹窗问题/Mod导致报错弹窗问题' },
+      { text: 'GI', link: '/Tutorials/Games/GI/PlayWithoutError/PlayWithoutError' },
       { text: 'HI3', link: '/Tutorials/Games/HI3/OutlineFix/OutlineFix' },
       { text: 'HSR', link: '/Tutorials/Games/HSR/WhatIsUV2/WhatIsUV2' },
       { text: 'ZZZ', link: '/Tutorials/Games/ZZZ/NormalMapError/NormalMapError' },

@@ -11,6 +11,7 @@ export const sidebar = {
         { text: 'SSMT 版本更新', link: '/Tutorials/SSMT/SSMT3/SSMTVersionUpdate/SSMTVersionUpdate' },
         { text: 'SSMT 支持的游戏', link: '/Tutorials/SSMT/SSMT3/SSMTSupportedGames/SSMTSupportedGames' },
         { text: '无法打开 LOD.exe', link: '/Tutorials/SSMT/SSMT3/CantOpenLODExe/CantOpenLODExe' },
+        { text: '导入模型后UV错误怎么办', link: '/Tutorials/SSMT/SSMT3/WrongUVAfterImport/WrongUVAfterImport' },
       ]
     },
     {
@@ -27,7 +28,11 @@ export const sidebar = {
     {
       text: 'Tools',
       items: [
-        { text: 'Tools 首页', link: '/Tutorials/SSMT/Tools/index' },
+        { text: 'Paint.NET', link: '/Tutorials/SSMT/Tools/PaintDotNet/PaintDotNet' },
+        { text: 'Modify Channel Plugin', link: '/Tutorials/SSMT/Tools/ModifyChannelPlugin/ModifyChannelPlugin' },
+        { text: 'PhotoShop', link: '/Tutorials/SSMT/Tools/PhotoShop/PhotoShop' },
+        { text: 'Substance 3D Painter', link: '/Tutorials/SSMT/Tools/Substance3DPainter/Substance3DPainter' },
+        { text: 'ComfyUI Texture', link: '/Tutorials/SSMT/Tools/ComfyUITexture/ComfyUITexture' },
       ]
     },
     {
@@ -52,28 +57,29 @@ export const sidebar = {
 
         { text: 'SmoothMotion不兼容问题', link: '/Tutorials/SSMT/3Dmigoto/SmoothMotionIncompatibility/SmoothMotionIncompatibility' },
         { text: '新版本驱动导致无法注入问题', link: '/Tutorials/SSMT/3Dmigoto/DriverInjectionIssue/DriverInjectionIssue' },
-      ]
-    },
-    {
-      text: '3Dmigoto 使用技巧',
-      items: 
-      [
-        { text: '通过贴图找IB的Hash值', link: '/Tutorials/SSMT/3Dmigoto/FindIBHashByTexture/FindIBHashByTexture' },
+        { text: 'Dump 导致游戏卡死怎么办', link: '/Tutorials/SSMT/3Dmigoto/DumpUntilGameQuit/DumpUntilGameQuit' },
+        { text: '如何获取技能的Hash值', link: '/Tutorials/SSMT/3Dmigoto/HowToGetHashForSkill/HowToGetHashForSkill' },
+        { text: '如何合并多个Mod为一个按键切换Mod', link: '/Tutorials/SSMT/3Dmigoto/HowToCombineMod/HowToCombineMod' },
+        { text: '跨IB渲染后接缝处对不上怎么办', link: '/Tutorials/SSMT/3Dmigoto/CrossIBButWrongBody/CrossIBButWrongBody' },
+        { text: '模型单面贴图问题', link: '/Tutorials/SSMT/3Dmigoto/ModelSingleTextureProblem/ModelSingleTextureProblem' },
+        { text: '贴图格式导致色差问题', link: '/Tutorials/SSMT/3Dmigoto/TextureFormatProblem/TextureFormatProblem' },
       ]
     }
   ],
 
     '/Tutorials/Games/':[
-      // {
-      //   text: 'GI',
-      //   items: [
-      //     { text: 'Mod变成一坨', link: '/Tutorials/Games/GI/ModDistortion/ModDistortion' },
-      //     { text: 'COLOR不同导致Mod无法显示', link: '/Tutorials/Games/GI/ColorMismatch/ColorMismatch' },
-      //     { text: '原神角色轮廓线修复', link: '/Tutorials/Games/GI/OutlineFix/OutlineFix' },
-      //     { text: '原神脸部隐藏问题', link: '/Tutorials/Games/GI/FaceHidingIssue/FaceHidingIssue' },
-        
-      //   ]
-      // },
+      {
+        text: 'GI',
+        items: [
+          { text: 'Mod变成一坨', link: '/Tutorials/Games/GI/ModDistortion/ModDistortion' },
+          { text: 'COLOR不同导致Mod无法显示', link: '/Tutorials/Games/GI/ColorMismatch/ColorMismatch' },
+          { text: '原神角色轮廓线修复', link: '/Tutorials/Games/GI/OutlineFix/OutlineFix' },
+          { text: '原神脸部隐藏问题', link: '/Tutorials/Games/GI/FaceHidingIssue/FaceHidingIssue' },
+          { text: '原神Mod不报错方法', link: '/Tutorials/Games/GI/PlayWithoutError/PlayWithoutError' },
+          { text: 'Mod抖动问题', link: '/Tutorials/Games/GI/ModIsShaking/ModIsShaking' },
+          { text: 'OR Fix 和 NN Fix', link: '/Tutorials/Games/GI/ORFixAndNNFix/ORFixAndNNFix' },
+        ]
+      },
       {
         text: 'HI3',
         items: [

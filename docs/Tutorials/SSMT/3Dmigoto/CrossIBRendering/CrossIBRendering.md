@@ -1,10 +1,16 @@
-# 什么是跨IB渲染？
-部分游戏中，身体和衣服使用了不同的Shader进行渲染，使用不同渲染的部分一般不在同一个IB中，导致材质和光照效果不同，在部分情况下，如果我们想让某个部分使用另一个部分的光照和材质Shader进行渲染，就需要用到跨IB渲染技术。
+# 🔄 跨 IB 渲染教程
 
-这个名字是我自己随便起的，没有英文对应的技术名词。
+## 📝 什么是跨 IB 渲染？
 
-# 实现方法
-首先把最终的Mod的ini先贴过来，方便随时参考：
+部分游戏中，身体和衣服使用了不同的 **Shader** 进行渲染，使用不同渲染的部分一般不在同一个 **IB** 中，导致材质和光照效果不同。
+
+在部分情况下，如果我们想让某个部分使用另一个部分的光照和材质 **Shader** 进行渲染，就需要用到跨 **IB** 渲染技术。
+
+> 💡 **提示**：这个名字是我自己随便起的，没有英文对应的技术名词。
+
+## 🛠️ 实现方法
+
+首先把最终的 Mod 的 `ini` 先贴过来，方便随时参考：
 
 ```
 
@@ -29,14 +35,12 @@ key = f7
 type = cycle
 $swapkey0 = 0,1,
 
-
 ;MARK:Key----------------------------------------------------------
 [KeySwap_1]
 condition = $active0 == 1
 key = f8
 type = cycle
 $swapkey1 = 0,1,
-
 
 ;MARK:TextureOverrideVertexLimitRaise----------------------------------------------------------
 [TextureOverride_6b3c1103_丝袜_VertexLimitRaise]
@@ -45,7 +49,6 @@ override_byte_stride = 40
 override_vertex_count = 1025
 uav_byte_stride = 4
 
-
 ;MARK:TextureOverrideVertexLimitRaise----------------------------------------------------------
 [TextureOverride_81d8e71a_衣服_VertexLimitRaise]
 hash = 1f516443
@@ -53,14 +56,12 @@ override_byte_stride = 40
 override_vertex_count = 36397
 uav_byte_stride = 4
 
-
 ;MARK:TextureOverrideVertexLimitRaise----------------------------------------------------------
 [TextureOverride_298dc3b2_腿和脖子_VertexLimitRaise]
 hash = 175c6c67
 override_byte_stride = 40
 override_vertex_count = 1051
 uav_byte_stride = 4
-
 
 ;MARK:TextureOverrideVB----------------------------------------------------------
 ; 6b3c1103 ----------------------------
@@ -80,7 +81,6 @@ vb1 = Resource6b3c1103Texcoord
 [TextureOverride_VB_6b3c1103_丝袜_Blend]
 hash = 13c142be
 
-
 ;MARK:TextureOverrideVB----------------------------------------------------------
 ; 81d8e71a ----------------------------
 [TextureOverride_VB_81d8e71a_衣服_Position]
@@ -98,7 +98,6 @@ vb1 = Resource81d8e71aTexcoord
 
 [TextureOverride_VB_81d8e71a_衣服_Blend]
 hash = c123de45
-
 
 ;MARK:TextureOverrideVB----------------------------------------------------------
 ; 298dc3b2 ----------------------------
@@ -118,7 +117,6 @@ vb1 = Resource298dc3b2Texcoord
 [TextureOverride_VB_298dc3b2_腿和脖子_Blend]
 hash = 60cc2063
 
-
 ;MARK:TextureOverrideIB----------------------------------------------------------
 [TextureOverride_IB_6b3c1103_丝袜_Component1]
 hash = 6b3c1103
@@ -130,7 +128,6 @@ if $swapkey0 == 1
   ; [mesh:6b3c1103-1-丝袜.001] [vertex_count:1025]
   drawindexed = 5517,0,0
 endif
-
 
 [Resource_VB0]
 [Resource_VB1]
@@ -169,13 +166,11 @@ vb1 = Resource_VB1
 ; [mesh:81d8e71a-1-身体跨IB] [vertex_count:2558]
 drawindexed = 13836,70386,0
 
-
 ;MARK:ResourceBuffer----------------------------------------------------------
 [Resource_6b3c1103_VertexLimit]
 type = Buffer
 format = R32G32B32A32_UINT
 data = 1025 0 0 0
-
 
 ;MARK:ResourceBuffer----------------------------------------------------------
 [Resource6b3c1103Position]
@@ -198,13 +193,11 @@ type = Buffer
 format = DXGI_FORMAT_R32_UINT
 filename = Buffer/6b3c1103-Component1.buf
 
-
 ;MARK:ResourceBuffer----------------------------------------------------------
 [Resource_81d8e71a_VertexLimit]
 type = Buffer
 format = R32G32B32A32_UINT
 data = 36397 0 0 0
-
 
 ;MARK:ResourceBuffer----------------------------------------------------------
 [Resource81d8e71aPosition]
@@ -227,13 +220,11 @@ type = Buffer
 format = DXGI_FORMAT_R32_UINT
 filename = Buffer/81d8e71a-Component1.buf
 
-
 ;MARK:ResourceBuffer----------------------------------------------------------
 [Resource_298dc3b2_VertexLimit]
 type = Buffer
 format = R32G32B32A32_UINT
 data = 1051 0 0 0
-
 
 ;MARK:ResourceBuffer----------------------------------------------------------
 [Resource298dc3b2Position]
@@ -256,11 +247,9 @@ type = Buffer
 format = DXGI_FORMAT_R32_UINT
 filename = Buffer/298dc3b2-Component1.buf
 
-
 ;MARK:ResourceTexture----------------------------------------------------------
 [Resource_298dc3b2_1_d4b0a178_Slot_DiffuseMap]
 filename = Texture/298dc3b2_1_d4b0a178_Slot_DiffuseMap.dds
-
 
 ;MARK:VertexShaderCheck----------------------------------------------------------
 [ShaderOverride_a3c5c0c308ddeb69]
@@ -317,16 +306,10 @@ if $costume_mods
   checktextureoverride = ib
 endif
 
-
 ;sha256=180ab2c539fc9db7795401fdf5af7c4fb102d09b97ce65a7c809e8ebaa681718
-
-
-
 ```
 
-这里有很多内容是用不到的，我们去掉部分无效内容，只关注核心的几行。
-
-```
+## 🔍 核心原理
 
 
 
@@ -437,28 +420,27 @@ Resource_VB1 = ref vb1
 
 ```
 
-这里的
+这里的：
 
-```
+```ini
 [Resource_VB0]
 [Resource_VB1]
-
 ```
 
-就是声明资源
-这里的
+就是声明资源。
 
-```
+这里的：
+
+```ini
 Resource_VB0 = ref vb0
 Resource_VB1 = ref vb1
-
 ```
 
-就是备份资源
+就是备份资源。
 
-备份完成资源后，要在身体的部分DrawIndexed出来，在DrawIndexed之前，需要替换IB、VB0、VB1，如下：
+备份完成资源后，要在身体的部分 `DrawIndexed` 出来，在 `DrawIndexed` 之前，需要替换 `IB`、`VB0`、`VB1`，如下：
 
-```
+```ini
 ;MARK:TextureOverrideIB----------------------------------------------------------
 [TextureOverride_IB_298dc3b2_腿和脖子_Component1]
 hash = 298dc3b2
@@ -477,9 +459,9 @@ vb1 = Resource_VB1
 drawindexed = 13836,70386,0
 ```
 
-这里的代码是我们额外加上的，加在身体部分正常drawindexed完成之后：
+这里的代码是我们额外加上的，加在身体部分正常 `drawindexed` 完成之后：
 
-```
+```ini
 ib = Resource_81d8e71a_Component1
 vb0 = Resource_VB0
 vb1 = Resource_VB1
@@ -487,18 +469,22 @@ vb1 = Resource_VB1
 drawindexed = 13836,70386,0
 ```
 
-这里的
+这里的：
 
-```
+```ini
 ; [mesh:81d8e71a-1-身体跨IB] [vertex_count:2558]
 drawindexed = 13836,70386,0
 ```
 
-就是原本正常生成完Mod后，是在衣服部分drawindexed的，我们挪过来了。
+就是原本正常生成完 Mod 后，是在衣服部分 `drawindexed` 的，我们挪过来了。
 
-到这里跨IB渲染就完成了，我们成功的把身体模型用衣服的权重来传递，并且在衣服的部位上生成Mod，最后使用跨IB渲染技术，在身体部位绘制，以达到衣服部位生成的mod使用身体材质渲染的效果。
+到这里跨 **IB** 渲染就完成了，我们成功的把身体模型用衣服的权重来传递，并且在衣服的部位上生成 Mod，最后使用跨 **IB** 渲染技术，在身体部位绘制，以达到衣服部位生成的 Mod 使用身体材质渲染的效果。
 
-每个游戏的跨IB方法，都要随机应变，甚至每种shader的跨IB方法都不一样，没有完全相同的方法适用于所有场景，理解其核心原理就好。
+## ⚠️ 注意事项
 
-比如有些是在VB0的替换部分draw完成后copy So0的，比如有些除了copy vb0之外，还需要copy cs-t0等等来修正坐标系，具体Mod具体分析即可，如果不懂的话，首选方案还是找别人做好的跨IB渲染Mod来参考原理。
+每个游戏的跨 **IB** 方法，都要随机应变，甚至每种 **Shader** 的跨 **IB** 方法都不一样，没有完全相同的方法适用于所有场景，理解其核心原理就好。
+
+比如有些是在 `VB0` 的替换部分 `draw` 完成后 `copy So0` 的，比如有些除了 `copy vb0` 之外，还需要 `copy cs-t0` 等等来修正坐标系，具体 Mod 具体分析即可。
+
+> 💡 **提示**：如果不懂的话，首选方案还是找别人做好的跨 **IB** 渲染 Mod 来参考原理。
 

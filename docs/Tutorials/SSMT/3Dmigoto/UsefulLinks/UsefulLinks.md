@@ -3,7 +3,7 @@
 
 ## 📚 英文版 3Dmigoto 文档
 
-偏向 0 基础，全套内容是 **XXMI** 相关的，由 **AGMG** 维护
+偏向 0 基础，全套内容是 **XXMI** 相关的，由 **AGMG** 维护。
 
 - **在线文档**: [https://leotorrez.github.io/modding/](https://leotorrez.github.io/modding/)
 - **源仓库**: [https://github.com/leotorrez/modding](https://github.com/leotorrez/modding)
@@ -20,4 +20,10 @@
 - **Virtual Key Codes**: [https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes](https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes)
 
 > 💡 **提示**：这些链接包含了丰富的 3Dmigoto 相关资源和开发工具，建议收藏备用。
+
+## 🤖 生成小物件的 AI
+
+一般用来生成一些情趣小物件，还挺好用的，别生成太复杂的模型就足够用了。
+
+- **Tripo3D AI**: [https://www.tripo3d.ai/](https://www.tripo3d.ai/)
 

@@ -41,6 +41,11 @@ export const sidebar = {
         { text: 'F2 Addon', link: '/Tutorials/SSMT/Blender/F2Addon/F2Addon' },
         { text: 'Fluid Painter', link: '/Tutorials/SSMT/Blender/FluidPainter/FluidPainter' },
         { text: 'Handy Weight Edit', link: '/Tutorials/SSMT/Blender/HandyWeightEdit/HandyWeightEdit' },
+        { text: 'Material Combiner', link: '/Tutorials/SSMT/Blender/MaterialCombiner/MaterialCombiner' },
+        { text: 'MikuMikuDance', link: '/Tutorials/SSMT/Blender/MikuMikuDance/MikuMikuDance' },
+        { text: 'MikuMikuRig', link: '/Tutorials/SSMT/Blender/MikuMikuRig/MikuMikuRig' },
+        { text: 'Vertex Color Master', link: '/Tutorials/SSMT/Blender/VertexColorMaster/VertexColorMaster' },
+        { text: 'Screenshot Keys', link: '/Tutorials/SSMT/Blender/ScreenshotKeys/ScreenshotKeys' },
       ]
     },
     {
@@ -96,7 +101,7 @@ export const sidebar = {
           { text: '崩铁角色轮廓线修复', link: '/Tutorials/Games/HSR/OutlineFix/OutlineFix' },
           { text: '崩铁角色黄色描边修复', link: '/Tutorials/Games/HSR/YellowOutlineFix/YellowOutlineFix' },
           { text: '部分动作导致Mod炸裂', link: '/Tutorials/Games/HSR/ActionModCrash/ActionModCrash' },
-
+          { text: 'AI 插针导致 Mod 炸裂', link: '/Tutorials/Games/HSR/AIBrokeMods/AIBrokeMods' },
         ]
       },
       {
@@ -178,6 +183,8 @@ export const sidebar = {
           { text: '☆跨IB渲染的Mod逆向', link: '/Tutorials/Plugins/SSMT-Reverse/CrossIBReverse/CrossIBReverse' },
           { text: '☆原神面部Mod逆向方法', link: '/Tutorials/Plugins/SSMT-Reverse/GenshinFaceReverse/GenshinFaceReverse' },
           { text: '☆IndexBuffer和CategoryBuffer膨胀混淆技术', link: '/Tutorials/Plugins/SSMT-Reverse/BufferInflationObfuscation/BufferInflationObfuscation' },
+          { text: '鸣潮解包获取原骨骼来绑骨', link: '/Tutorials/Plugins/SSMT-Reverse/WutheringWavesBone/WutheringWavesBone' },
+          { text: '米游系列游戏原本解包骨骼', link: '/Tutorials/Plugins/SSMT-Reverse/HoyoGamesBone/HoyoGamesBone' },
         ]
       },
       {

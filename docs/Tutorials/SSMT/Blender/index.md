@@ -1,3 +1,0 @@
-# Blender Tutorials
-
-Coming soon...

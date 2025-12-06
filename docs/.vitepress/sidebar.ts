@@ -4,6 +4,8 @@ export const sidebar = {
       text: 'SSMT3',
       items: [
         { text: 'SSMT3 下载与安装', link: '/Tutorials/SSMT/SSMT3/DownloadAndInstall/DownloadAndInstall' },
+        { text: '主页配置', link: '/Tutorials/SSMT/SSMT3/HomePageConfig/HomePageConfig' },
+        { text: '注入3Dmigoto到游戏', link: '/Tutorials/SSMT/SSMT3/Inject3DmigotoIntoGame/Inject3DmigotoIntoGame' },
       ]
     },
     {

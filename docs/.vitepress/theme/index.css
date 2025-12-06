@@ -587,11 +587,30 @@ html {
 }
 
 /* =========================================
-   导航栏特效：以太边界 (Ether Border) - 已移除以恢复默认清晰度
+   导航栏特效：以太边界 (Ether Border)
    ========================================= */
-/* 
-.VPNavBar { ... } 
-*/
+.VPNav {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  width: 100% !important;
+}
+
+.dark .VPNav {
+  background-color: rgba(11, 12, 21, 0.85) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.VPNavBar {
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+
+.dark .VPNavBar {
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
 
 /* =========================================
    侧边栏特效：能量力场 (Energy Field)

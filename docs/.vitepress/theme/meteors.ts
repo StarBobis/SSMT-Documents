@@ -51,6 +51,19 @@ export function initMeteorEffect() {
     '#FFD700', // Gold
   ]
 
+  // 预计算星星顶点
+  const STAR_VERTICES: {x: number, y: number}[] = []
+  const angleStep = (Math.PI * 2) / 10
+  const startAngle = -Math.PI / 2
+  for (let i = 0; i < 10; i++) {
+      const angle = startAngle + i * angleStep
+      const radius = i % 2 === 0 ? 1.0 : 0.4
+      STAR_VERTICES.push({
+          x: Math.cos(angle) * radius,
+          y: Math.sin(angle) * radius
+      })
+  }
+
   class Star {
     x: number
     y: number
@@ -86,7 +99,7 @@ export function initMeteorEffect() {
     }
 
     draw(ctx: CanvasRenderingContext2D) {
-      ctx.save()
+      // 优化：移除 save/restore，使用 setTransform 重置
       ctx.translate(this.x, this.y)
       ctx.rotate(this.rotation)
       
@@ -96,12 +109,10 @@ export function initMeteorEffect() {
       const currentAlpha = this.alpha * (0.2 + 0.8 * pulse) 
       
       ctx.beginPath()
-      // 绘制五角星
-      for (let i = 0; i < 5; i++) {
-        ctx.lineTo(0, -this.size)
-        ctx.rotate((Math.PI * 2) / 10)
-        ctx.lineTo(0, -this.size * 0.4) // 内半径
-        ctx.rotate((Math.PI * 2) / 10)
+      // 优化：使用预计算顶点
+      ctx.moveTo(STAR_VERTICES[0].x * this.size, STAR_VERTICES[0].y * this.size)
+      for (let i = 1; i < STAR_VERTICES.length; i++) {
+          ctx.lineTo(STAR_VERTICES[i].x * this.size, STAR_VERTICES[i].y * this.size)
       }
       ctx.closePath()
       
@@ -115,7 +126,8 @@ export function initMeteorEffect() {
       ctx.shadowBlur = this.size * 3 * (0.5 + 1.5 * pulse) // 光晕范围 1.5x 到 6x
       ctx.shadowColor = color
       ctx.fill()
-      ctx.restore()
+      
+      ctx.setTransform(1, 0, 0, 1, 0, 0)
     }
   }
 

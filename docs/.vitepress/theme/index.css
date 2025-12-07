@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Outfit:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --vp-font-family-base: 'M PLUS Rounded 1c', 'YouYuan', 'Yuanti SC', 'Hiragino Maru Gothic ProN', 'Rajdhani', 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  
-  --vp-font-family-mono: 'Fira Code', source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace !important;
+  --vp-font-family-base:
+    -apple-system, BlinkMacSystemFont,
+    "Segoe UI",
+    "Noto Sans CJK SC", "Noto Sans SC",
+    "PingFang SC",
+    "Microsoft YaHei",
+    sans-serif !important;
+
+  --vp-font-family-mono:
+    Menlo, Consolas, "Courier New", monospace !important;
 }
 
-h1, h2, h3, h4, h5, h6, 
-.VPHero .name, 
-.VPHero .text, 
-.VPFeature .title,
-.VPSidebarItem .text,
-.VPNavBarMenuLink {
-  font-family: 'M PLUS Rounded 1c', 'YouYuan', 'Yuanti SC', 'Hiragino Maru Gothic ProN', 'Rajdhani', sans-serif !important;
+h1, h2, h3, h4, h5, h6 {
+  font-family:
+    -apple-system, BlinkMacSystemFont,
+    "Segoe UI",
+    "Noto Sans CJK SC", "Noto Sans SC",
+    "PingFang SC",
+    "Microsoft YaHei",
+    sans-serif !important;
+  font-weight: 600;
 }
 
 ::selection {

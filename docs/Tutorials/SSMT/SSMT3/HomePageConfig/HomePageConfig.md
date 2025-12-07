@@ -80,18 +80,6 @@ D:\yysls\yysls_medium\Engine\Binaries\Win64rh\yysls.exe
 
 ![alt text](image-7.png)
 
-### 🌊 鸣潮配置方法
-- 游戏预设：**WWMI**
-- 进程路径只填一个：`Client-Win64-Shipping.exe`
-
-![alt text](image-8.png)
-
-启动路径空着，只在 SSMT 中启动 3Dmigoto，不启动游戏。
-
-3Dmigoto 用的是 **WWMI-Package**，点击【从 Github 检查更新并自动下载最新 3Dmigoto 加载器包】自动下载最新版。
-
-随后打开鸣潮启动器，勾选 DX11 启动即可。
-
 ### 🚫 解限机已不支持
 很显然，解限机是 PVP 游戏，且卖皮肤，且机甲模型是宝贝，且之前上了高价值模型保护系统。使用 ACE 来拦截任何可能的外挂程序。
 

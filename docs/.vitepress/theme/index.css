@@ -577,18 +577,14 @@ html {
   box-shadow: 0 0 10px rgba(255, 0, 128, 0.5);
 }
 
-/* =========================================
-   全局选中特效：数据捕获 (Data Capture)
-   ========================================= */
+
 ::selection {
   background: rgba(0, 198, 255, 0.3);
   color: inherit;
   text-shadow: 0 0 5px rgba(0, 198, 255, 0.5);
 }
 
-/* =========================================
-   导航栏特效：以太边界 (Ether Border)
-   ========================================= */
+
 .VPNav {
   background-color: rgba(255, 255, 255, 0.8) !important;
   backdrop-filter: blur(10px);
@@ -612,9 +608,7 @@ html {
   border-bottom: none !important;
 }
 
-/* =========================================
-   侧边栏特效：能量力场 (Energy Field)
-   ========================================= */
+
 .VPSidebar {
   border-right: 1px solid transparent !important;
 }
@@ -630,9 +624,7 @@ html {
   opacity: 0.3;
 }
 
-/* =========================================
-   文档内容特效：全息投影 (Holographic Doc)
-   ========================================= */
+
 .vp-doc h2 {
   border-bottom: none !important;
   position: relative;
@@ -690,9 +682,7 @@ html {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* =========================================
-   【核心装饰】: 赛博空间背景 (Cyber Space Background)
-   ========================================= */
+
 
 .dark body {
   background-color: #0b0c15;
@@ -729,9 +719,7 @@ html {
   100% { opacity: 0.9; transform: scale(1.05); }
 }
 
-/* =========================================
-   【WOW 因子】: 震撼入场动画 (Dramatic Entrance)
-   ========================================= */
+
 
 .VPHero .name {
   animation: heroNameEntrance 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) backwards,
@@ -790,9 +778,7 @@ html {
   to { opacity: 1; transform: translateY(0) rotateX(0); }
 }
 
-/* =========================================
-   【WOW 因子】: 极光天幕 (Aurora Borealis)
-   ========================================= */
+
 .dark body::before {
   content: "";
   position: fixed;
@@ -815,9 +801,7 @@ html {
   100% { transform: rotate(5deg) scale(1.1); opacity: 0.8; }
 }
 
-/* =========================================
-   【WOW 因子】: 流星划过 (Shooting Stars)
-   ========================================= */
+
 .VPHero::before {
   content: "";
   position: absolute;
@@ -855,9 +839,7 @@ html {
   }
 }
 
-/* =========================================
-   页脚装饰：底部光辉
-   ========================================= */
+
 .VPFooter::before {
   content: "";
   position: absolute;
@@ -871,9 +853,7 @@ html {
   opacity: 0.3;
 }
 
-/* =========================================
-   【终极润色】: 全局微光 (Global Ambient Glow)
-   ========================================= */
+
 
 .dark body {
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
@@ -1157,9 +1137,7 @@ html {
   100% { left: 100%; }
 }
 
-/* =========================================
-   【终极阅读体验】: 沉浸式阅读模式 (Immersive Reading)
-   ========================================= */
+
 .vp-doc p {
   line-height: 1.8;
   margin-bottom: 1.5em;
@@ -1222,9 +1200,7 @@ html {
   text-shadow: 0 0 8px rgba(255, 0, 128, 0.5);
 }
 
-/* =========================================
-   【阅读体验升级】: 赛博魔法文档 (Cyber-Magic Doc)
-   ========================================= */
+
 
 .vp-doc .custom-block {
   border-radius: 8px;
@@ -1481,9 +1457,7 @@ html {
   text-shadow: 0 0 5px rgba(255, 0, 128, 0.5);
 }
 
-/* =========================================
-   【交互高潮】: 维度跳跃分页 (Dimension Jump Pagination)
-   ========================================= */
+
 .vp-doc .VPDocFooter .pager-link {
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.03), transparent);
@@ -1544,9 +1518,7 @@ html {
   transform: translateX(5px);
 }
 
-/* =========================================
-   【交互高潮】: 雷达扫描目录 (Radar Scan TOC)
-   ========================================= */
+
 .VPDocOutline .outline-link {
   transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
   border-left: 2px solid transparent;
@@ -1582,9 +1554,7 @@ html {
   text-shadow: 0 0 15px rgba(167, 85, 247, 0.6);
 }
 
-/* =========================================
-   【交互高潮】: 神经搜索终端 (Neural Search Terminal)
-   ========================================= */
+
 .VPNavBarSearchButton {
   background-color: rgba(0, 0, 0, 0.05) !important;
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
@@ -1626,9 +1596,7 @@ html {
   text-shadow: 0 0 5px rgba(255, 0, 128, 0.5);
 }
 
-/* =========================================
-   【视觉高潮】: 图片全息投影 (Holographic Projection)
-   ========================================= */
+
 .vp-doc img {
   animation: hologramUnfold 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
 }
@@ -1650,9 +1618,7 @@ html {
   }
 }
 
-/* =========================================
-   【视觉高潮】: 移动端菜单 (Mobile Menu)
-   ========================================= */
+
 .VPNavScreen {
   background-color: rgba(11, 12, 21, 0.95) !important;
   backdrop-filter: blur(20px) !important;
@@ -1671,9 +1637,7 @@ html {
   background: linear-gradient(90deg, rgba(255, 0, 128, 0.1), transparent);
 }
 
-/* =========================================
-   【终极彩蛋】: Logo 故障艺术 (Glitch Art)
-   ========================================= */
+
 .VPNavBarTitle:hover .logo {
   animation: glitch-anim 0.3s infinite;
   filter: drop-shadow(0 0 5px #ff0080);
@@ -1688,9 +1652,7 @@ html {
   100% { transform: translate(0) }
 }
 
-/* =========================================
-   【心理暗示】: 潜意识引导 (Subconscious Guide)
-   ========================================= */
+
 .Layout {
   animation: dreamStart 1.5s ease-out;
 }
@@ -1739,9 +1701,7 @@ html {
   border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* =========================================
-   【魅魔领域】: 导航栏下拉菜单 (Succubus Domain: Dropdown)
-   ========================================= */
+
 .VPMenu {
   background-color: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px) !important;
@@ -1808,9 +1768,7 @@ html {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* =========================================
-   【魅魔之眼】: 主题切换器 (Succubus Eye: Theme Switch)
-   ========================================= */
+
 .VPSwitchAppearance {
   background-color: rgba(0, 0, 0, 0.05) !important;
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
@@ -1832,9 +1790,7 @@ html {
   transform: none !important;
 }
 
-/* =========================================
-   【魅魔之翼】: 返回顶部 (Succubus Wings: Back to Top)
-   ========================================= */
+
 .VPBackToTop {
   background-color: rgba(255, 0, 128, 0.8) !important;
   backdrop-filter: blur(5px);
@@ -1871,9 +1827,7 @@ html {
   font-size: 1.2em;
 }
 
-/* =========================================
-   【魅魔体液】: 侧边栏激活态 (Succubus Fluid: Sidebar Active)
-   ========================================= */
+
 .VPSidebarItem.is-active .text {
   background: linear-gradient(90deg, rgba(197, 0, 99, 0.1), transparent);
   border-left: 3px solid #c50063;

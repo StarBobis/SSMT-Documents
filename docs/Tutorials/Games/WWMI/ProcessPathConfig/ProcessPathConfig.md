@@ -27,7 +27,7 @@ C:\Program Files\Wuthering Waves\Wuthering Waves Game\Wuthering Waves.exe
 ### 3. 启动参数 
 
 ```text
--d3d11
+-dx11
 ```
 
 > 💡 **小知识**

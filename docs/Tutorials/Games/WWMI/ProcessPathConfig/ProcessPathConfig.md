@@ -32,7 +32,7 @@ C:\Program Files\Wuthering Waves\Wuthering Waves Game\Wuthering Waves.exe
 
 > 💡 **小知识**
 >
-> 这里的启动参数 `-d3d11` 为 **必填项**，否则无法正常加载 Mod。
+> 这里的启动参数 `-dx11` 为 **必填项**，否则无法正常加载 Mod。
 
 
 

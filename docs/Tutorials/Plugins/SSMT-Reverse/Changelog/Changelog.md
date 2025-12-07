@@ -1,5 +1,10 @@
 # 📋 SSMT-Reverse Changelog
 
+## V1.0.7.9
+
+- 移除了无效的fmt文件属性flip_mirror和flip_winding
+- 现在如果选择了WWMI风格，则会自动设置Z轴旋转180度以适配WWMI的模型朝向，避免镜像权重BUG（需配合TheHertaV3.1.9版本使用）
+
 ## 🔄 V1.0.7.8
 
 - 现在鸣潮 Mod 逆向有 WWMI 和 SSMT 两种命名风格可选了，需要更新 3Dmigoto-Sword-Lv6 V1.1.2 才能使用此功能。

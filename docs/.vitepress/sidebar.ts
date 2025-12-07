@@ -74,45 +74,45 @@ export const sidebar = {
 
     '/Tutorials/Games/':[
       {
-        text: 'GI',
+        text: 'GIMI',
         items: [
-          { text: 'Mod变成一坨', link: '/Tutorials/Games/GI/ModDistortion/ModDistortion' },
-          { text: 'COLOR不同导致Mod无法显示', link: '/Tutorials/Games/GI/ColorMismatch/ColorMismatch' },
-          { text: '原神角色轮廓线修复', link: '/Tutorials/Games/GI/OutlineFix/OutlineFix' },
-          { text: '原神脸部隐藏问题', link: '/Tutorials/Games/GI/FaceHidingIssue/FaceHidingIssue' },
-          { text: '原神Mod不报错方法', link: '/Tutorials/Games/GI/PlayWithoutError/PlayWithoutError' },
-          { text: 'Mod抖动问题', link: '/Tutorials/Games/GI/ModIsShaking/ModIsShaking' },
-          { text: 'OR Fix 和 NN Fix', link: '/Tutorials/Games/GI/ORFixAndNNFix/ORFixAndNNFix' },
+          { text: 'Mod变成一坨', link: '/Tutorials/Games/GIMI/ModDistortion/ModDistortion' },
+          { text: 'COLOR不同导致Mod无法显示', link: '/Tutorials/Games/GIMI/ColorMismatch/ColorMismatch' },
+          { text: '原神角色轮廓线修复', link: '/Tutorials/Games/GIMI/OutlineFix/OutlineFix' },
+          { text: '原神脸部隐藏问题', link: '/Tutorials/Games/GIMI/FaceHidingIssue/FaceHidingIssue' },
+          { text: '原神Mod不报错方法', link: '/Tutorials/Games/GIMI/PlayWithoutError/PlayWithoutError' },
+          { text: 'Mod抖动问题', link: '/Tutorials/Games/GIMI/ModIsShaking/ModIsShaking' },
+          { text: 'OR Fix 和 NN Fix', link: '/Tutorials/Games/GIMI/ORFixAndNNFix/ORFixAndNNFix' },
         ]
       },
       {
-        text: 'HI3',
+        text: 'HIMI',
         items: [
-          { text: '崩坏三角色轮廓线修复', link: '/Tutorials/Games/HI3/OutlineFix/OutlineFix' },
-          { text: '第二套UVMap的用处', link: '/Tutorials/Games/HI3/SecondUVMapUsage/SecondUVMapUsage' },
+          { text: '崩坏三角色轮廓线修复', link: '/Tutorials/Games/HIMI/OutlineFix/OutlineFix' },
+          { text: '第二套UVMap的用处', link: '/Tutorials/Games/HIMI/SecondUVMapUsage/SecondUVMapUsage' },
         ]
       },
       {
-        text: 'HSR',
+        text: 'SRMI',
         items: [
-          { text: 'UV2是干什么的', link: '/Tutorials/Games/HSR/WhatIsUV2/WhatIsUV2' },
-          { text: '动态Mod导致角色描边抽搐', link: '/Tutorials/Games/HSR/DynamicModOutlineGlitch/DynamicModOutlineGlitch' },
-          { text: '贴图槽位乱窜问题', link: '/Tutorials/Games/HSR/TextureSlotIssue/TextureSlotIssue' },
-          { text: '崩铁角色轮廓线修复', link: '/Tutorials/Games/HSR/OutlineFix/OutlineFix' },
-          { text: '崩铁角色黄色描边修复', link: '/Tutorials/Games/HSR/YellowOutlineFix/YellowOutlineFix' },
-          { text: '部分动作导致Mod炸裂', link: '/Tutorials/Games/HSR/ActionModCrash/ActionModCrash' },
-          { text: 'AI 插针导致 Mod 炸裂', link: '/Tutorials/Games/HSR/AIBrokeMods/AIBrokeMods' },
+          { text: 'UV2是干什么的', link: '/Tutorials/Games/SRMI/WhatIsUV2/WhatIsUV2' },
+          { text: '动态Mod导致角色描边抽搐', link: '/Tutorials/Games/SRMI/DynamicModOutlineGlitch/DynamicModOutlineGlitch' },
+          { text: '贴图槽位乱窜问题', link: '/Tutorials/Games/SRMI/TextureSlotIssue/TextureSlotIssue' },
+          { text: '崩铁角色轮廓线修复', link: '/Tutorials/Games/SRMI/OutlineFix/OutlineFix' },
+          { text: '崩铁角色黄色描边修复', link: '/Tutorials/Games/SRMI/YellowOutlineFix/YellowOutlineFix' },
+          { text: '部分动作导致Mod炸裂', link: '/Tutorials/Games/SRMI/ActionModCrash/ActionModCrash' },
+          { text: 'AI 插针导致 Mod 炸裂', link: '/Tutorials/Games/SRMI/AIBrokeMods/AIBrokeMods' },
         ]
       },
       {
-        text: 'ZZZ',
+        text: 'ZZMI',
         items: [
-          { text: 'Mod法线贴图错误问题', link: '/Tutorials/Games/ZZZ/NormalMapError/NormalMapError' },
-          { text: '上下身体分开的问题', link: '/Tutorials/Games/ZZZ/BodySeparationIssue/BodySeparationIssue' },
-          { text: '关闭动态高精度', link: '/Tutorials/Games/ZZZ/DisableDynamicHighPrecision/DisableDynamicHighPrecision' },
-          { text: '完美阴影和轮廓线', link: '/Tutorials/Games/ZZZ/PerfectShadowAndOutline/PerfectShadowAndOutline' },
-          { text: '虚假头发问题', link: '/Tutorials/Games/ZZZ/FakeHairIssue/FakeHairIssue' },
-          { text: '爱丽丝的剑替换后消失', link: '/Tutorials/Games/ZZZ/AliceSwordDisappear/AliceSwordDisappear' },
+          { text: 'Mod法线贴图错误问题', link: '/Tutorials/Games/ZZMI/NormalMapError/NormalMapError' },
+          { text: '上下身体分开的问题', link: '/Tutorials/Games/ZZMI/BodySeparationIssue/BodySeparationIssue' },
+          { text: '关闭动态高精度', link: '/Tutorials/Games/ZZMI/DisableDynamicHighPrecision/DisableDynamicHighPrecision' },
+          { text: '完美阴影和轮廓线', link: '/Tutorials/Games/ZZMI/PerfectShadowAndOutline/PerfectShadowAndOutline' },
+          { text: '虚假头发问题', link: '/Tutorials/Games/ZZMI/FakeHairIssue/FakeHairIssue' },
+          { text: '爱丽丝的剑替换后消失', link: '/Tutorials/Games/ZZMI/AliceSwordDisappear/AliceSwordDisappear' },
         ]
       },
       {

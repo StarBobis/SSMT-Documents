@@ -1,27 +1,8 @@
 # ⚙️ 主页配置
 
-![alt text](image-3.png)
+游戏预设选择 `WWMI`
 
-MMT 中有两个鸣潮，分别叫 `WuWa` 和 `WWMI`。
-
--   **WuWa**: MMT 的数据类型。
--   **WWMI**: WWMITools 的数据类型。
-
-数据类型在提取模型和 Mod 逆向时都会用到，所以习惯使用 SSMT 流程的可以选择 `WuWa`，只使用 SSMT 提取模型或逆向 Mod 使用 WWMITools 生成 Mod 的用户可以选择 `WWMI`。
-
-对于鸣潮来说，执行逻辑要选择 `Wuthering Waves`，这样才能确保你自动下载的加载器是 XXMI Launcher 中的同款 WWMI 加载器。
-
-![alt text](image-4.png)
-
-> ⚠️ **注意**：# ⚙️ 鸣潮 ProcessPath 配置
-
-## 📝 配置文件修改
-
-打开 `d3dx.ini`，修改 `ProcessPath` 为：
-
-```ini
-ProcessPath=Client-Win64-Shipping.exe
-```
+进程路径填写为：`Client-Win64-Shipping.exe`
 
 > ⚠️ **注意**：请确保文件名完全匹配，区分大小写。
 >
@@ -39,9 +20,9 @@ ProcessPath=Client-Win64-Shipping.exe
 
 # ▶️ 启动过程
 
-启动游戏的过程就是先点击右上角的 **启动 3Dmigoto Loader.exe**，然后通过游戏的启动器来启动游戏就行了。
+启动游戏的过程就是先点击右下角的 **开始游戏**，然后通过游戏的启动器来启动游戏就行了。
 
-# ⚡ 一键启动
+# ⚡ 如何一键启动?
 
 如下配置，即可如同其他游戏一样快捷启动。
 

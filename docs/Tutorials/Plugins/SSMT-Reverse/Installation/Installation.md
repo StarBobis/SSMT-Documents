@@ -43,7 +43,7 @@
 
 2. 随后把 `3Dmigoto-Sword-Lv5.exe` 放进去：
 
-   ![放入插件](image-5.png)
+![alt text](image-5.png)
 
 3. 然后就能正常使用上面的一键逆向功能了：
 

@@ -23,6 +23,18 @@
 请先安装一下 **3Dmigoto-Sword-Lv6**，开源地址为：
 [https://github.com/StarBobis/3Dmigoto-Sword-Lv6](https://github.com/StarBobis/3Dmigoto-Sword-Lv6)
 
+首先点击Releases：
+
+![alt text](Snipaste_2025-12-08_21-52-48.png)
+
+然后下载最新版本里面的zip压缩包`Sword-win-Portable.zip`：
+
+![alt text](image-32.png)
+
+下载后，解压后直接运行Sword.exe即可：
+
+![alt text](image-33.png)
+
 安装完毕后进行后续步骤。
 
 1. 我们打开 `3Dmigoto-Sword-Lv6`，点击【文件】=>【打开 Assets 文件夹】。
@@ -35,7 +47,7 @@
 
 3. 然后就能正常使用上面的一键逆向功能了：
 
-   ![功能启用](image-6.png)
+![alt text](image-6.png)
 
 # 🔄 如何更新版本？
 

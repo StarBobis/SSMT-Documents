@@ -5,7 +5,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/StarBobis/SSMT-Documents/pulls)
 
 > **SSMT (Super Simple Migoto Tools)** 的官方文档仓库。
-> 致力于为 3Dmigoto Mod 制作、逆向工程及插件开发提供最详尽的技术指南。
+> 致力于为 3Dmigoto Mod 制作、逆向工程及插件开发提供详尽的技术指南。
 
 🔗 **在线阅读文档**: [https://starbobis.github.io/SSMT-Documents/](https://starbobis.github.io/SSMT-Documents/)
 

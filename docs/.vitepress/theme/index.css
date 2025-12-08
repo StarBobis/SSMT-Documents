@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   background-color: #fffcf9;
   transition: background-color 0.5s ease;
+  overflow-x: hidden;
 }
 
 .dark body {
@@ -619,6 +620,8 @@ html {
 
 .VPSidebar {
   border-right: 1px solid transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: blur(10px);
 }
 
 .VPSidebar::after {
@@ -703,6 +706,7 @@ html {
 .VPHero {
   position: relative;
   z-index: 0;
+  overflow: hidden;
 }
 
 .VPHero::after {
@@ -1704,7 +1708,7 @@ html {
 }
 
 .dark .VPSidebar {
-  background-color: rgba(11, 12, 21, 0.85) !important;
+  background-color: transparent !important;
   backdrop-filter: blur(10px);
   border-right: 1px solid rgba(255, 255, 255, 0.05);
 }

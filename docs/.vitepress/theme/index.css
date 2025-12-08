@@ -158,9 +158,9 @@ body {
 }
 
 .VPFeature:hover {
-  transform: translateY(-8px);
+  transform: translateY(-2px);
   background-color: rgba(0, 0, 0, 0.05) !important;
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .dark .VPFeature:hover {
@@ -577,13 +577,12 @@ html {
 
 .dark ::-webkit-scrollbar-thumb {
   background: rgba(0, 198, 255, 0.4);
-  box-shadow: 0 0 5px rgba(0, 198, 255, 0.2);
+  box-shadow: none;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #ff0080 !important;
-  border: 0;
-  box-shadow: 0 0 10px rgba(255, 0, 128, 0.5);
+  box-shadow: none;
 }
 
 
@@ -1701,7 +1700,7 @@ html {
 
 .dark ::-webkit-scrollbar-thumb:hover {
   background: #ff0080;
-  box-shadow: 0 0 10px #ff0080;
+  box-shadow: none;
 }
 
 .dark .VPSidebar {
@@ -1861,4 +1860,16 @@ html {
 .dark .VPSidebarItem .text:not(.is-active):hover {
   color: #a755f7 !important;
   text-shadow: 0 0 5px rgba(167, 85, 247, 0.4);
+}
+
+/* Remove TOC gradient */
+.VPDocAsideOutline::before, 
+.VPDocAsideOutline::after,
+.VPDocAside .content::before,
+.VPDocAside .content::after,
+.aside-curtain {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+  opacity: 0 !important;
 }

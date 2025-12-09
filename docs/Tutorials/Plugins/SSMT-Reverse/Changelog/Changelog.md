@@ -1,6 +1,10 @@
 # 📋 SSMT-Reverse Changelog
 
-## V1.0.7.9
+## 🔄 V1.0.8.0
+
+- 新增`apply_rotation_transformation`，只有鸣潮的Mod在使用`WWMI`风格逆向时，会把这个设为`True`，同时配合`TheHertaV3.2.0`版本即可正常导入适用于`WWMI-Tools`流程的逆向出来的模型。
+
+## 🔄 V1.0.7.9
 
 - 移除了无效的fmt文件属性flip_mirror和flip_winding
 - 现在如果选择了WWMI风格，则会自动设置Z轴旋转180度以适配WWMI的模型朝向，避免镜像权重BUG（需配合TheHertaV3.1.9版本使用）

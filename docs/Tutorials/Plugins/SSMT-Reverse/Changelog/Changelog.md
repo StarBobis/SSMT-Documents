@@ -1,5 +1,9 @@
 # 📋 SSMT-Reverse Changelog
 
+## 🔄 V1.0.8.1
+
+- 修复了一键逆向页面的`一键逆向基于Buffer的分支Mod的ini`逆向出来的文件夹结构无法使用`TheHerta3`的`Sword侧边栏`进行**一键导入**的BUG。
+
 ## 🔄 V1.0.8.0
 
 - 新增`apply_rotation_transformation`，只有鸣潮的Mod在使用`WWMI`风格逆向时，会把这个设为`True`，同时配合`TheHertaV3.2.0`版本即可正常导入适用于`WWMI-Tools`流程的逆向出来的模型。

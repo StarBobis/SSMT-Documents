@@ -12,6 +12,8 @@ export const sidebar = {
         { text: 'SSMT 支持的游戏', link: '/Tutorials/SSMT/SSMT3/SSMTSupportedGames/SSMTSupportedGames' },
         { text: '无法打开 LOD.exe', link: '/Tutorials/SSMT/SSMT3/CantOpenLODExe/CantOpenLODExe' },
         { text: '导入模型后UV错误怎么办', link: '/Tutorials/SSMT/SSMT3/WrongUVAfterImport/WrongUVAfterImport' },
+        { text: 'SSMT版本更新日志', link: '/Tutorials/SSMT/SSMT3/ChangeLog/ChangeLog' },
+      
       ]
     },
     {
@@ -186,6 +188,9 @@ export const sidebar = {
           { text: '鸣潮解包获取原骨骼来绑骨', link: '/Tutorials/Plugins/SSMT-Reverse/WutheringWavesBone/WutheringWavesBone' },
           { text: '米游系列游戏原本解包骨骼', link: '/Tutorials/Plugins/SSMT-Reverse/HoyoGamesBone/HoyoGamesBone' },
           { text: '逆向出来的模型如何绑定骨骼？', link: '/Tutorials/Plugins/SSMT-Reverse/BindModelToBone/BindModelToBone' },
+          { text: '如何选择使用合适的一键逆向选项', link: '/Tutorials/Plugins/SSMT-Reverse/HowToChooseAutoReverseSelection/HowToChooseAutoReverseSelection' },
+
+          
         ]
       },
       {

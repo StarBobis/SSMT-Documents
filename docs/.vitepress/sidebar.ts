@@ -121,6 +121,8 @@ export const sidebar = {
         text: 'WWMI',
         items: [
           { text: '如何正确配置进程路径', link: '/Tutorials/Games/WWMI/ProcessPathConfig/ProcessPathConfig' },
+          { text: '修复Mod在版本更新后的贴图错误', link: '/Tutorials/Games/WWMI/HowToFixTextureBug/HowToFixTextureBug' },
+          
         ]
       },
       {

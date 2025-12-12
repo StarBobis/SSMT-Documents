@@ -28,9 +28,8 @@ export const nav = [
   { 
     text: 'SSMT扩展插件', 
      items: [
-      { text: 'SSMT-Reverse插件', link: '/Tutorials/Plugins/SSMT-Reverse/Introduction/Introduction' },
+      { text: '3Dmigoto-Sword-Lv5插件', link: '/Tutorials/Plugins/SSMT-Reverse-Plugin/T001Introduction/T001Introduction' },
       { text: 'SSMT-Protect插件', link: '/Tutorials/Plugins/SSMT-Protect/Introduction/Introduction' },
-
       
     ]
   },

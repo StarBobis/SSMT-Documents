@@ -4,13 +4,14 @@ import { h } from 'vue'
 import './index.css'
 import { initMeteorEffect } from './meteors'
 import BGMPlayer from './components/BGMPlayer.vue'
+import GoogleTranslate from './components/GoogleTranslate.vue'
 
 // 自定义主题
 export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      'nav-bar-content-after': () => h(BGMPlayer)
+      'nav-bar-content-after': () => [h(BGMPlayer), h(GoogleTranslate)]
     })
   },
   enhanceApp({ app, router, siteData }: EnhanceAppContext) {

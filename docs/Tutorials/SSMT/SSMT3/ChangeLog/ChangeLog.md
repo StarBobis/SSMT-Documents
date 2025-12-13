@@ -7,6 +7,17 @@ V3.2.8之后的SSMT遵循如下发布规则:
 
 **SSMT本体**仍然是免费的，我们希望通过这种方式来为一些支持SSMT开发的用户带来快人一步的领先体验，同时获取一些开发成本以确保SSMT能够持续进行技术迭代，感谢您的支持与理解。
 
+# V3.3.0
+
+- 🛠️ 修复了 <span style="color: #FF4500">**工作台**</span> 页面的 <span style="color: #1E90FF">**当前Dump模式**</span> 无法记忆，导致离开页面后，返回页面时显示状态和实际状态不同步的BUG。
+- 🎨 <span style="color: #32CD32">**贴图工具箱**</span> 页面有了全新的 <span style="color: #FFD700">**背景效果**</span>。
+- ✨ <span style="color: #32CD32">**贴图工具箱**</span> 页面新增 <span style="color: #FF69B4">**垂直翻转**</span> 和 <span style="color: #8A2BE2">**水平翻转**</span> 两个控制选项。
+- 🐛 修复了 <span style="color: #FF6347">**贴图标记**</span> 页面中，当多个DrawIB，或者同一个DrawIB的多个Component使用同一个Pixel Shader，即PS值相同时，标记其中一个Component不会让其它Component也自动标记好，或标记其中一个DrawIB不会让其它DrawIB也自动标记好的BUG。
+- 🩹 修复了打开 <span style="color: #FF6347">**贴图标记**</span> 页面后，在不手动更换当前选中的DrawIB的情况下，当前DrawIB上方并不会显示当前DrawIB的别名的BUG
+- 🎞️ 优化了切换 <span style="color: #FFD700">**动态视频背景**</span> 时显示的视觉效果。
+- 🔇 修复了 <span style="color: #FF69B4">**主页背景视频**</span> 可以播放声音的BUG。
+- 🔄 修复了主页点击 <span style="color: #1E90FF">**检查背景图更新**</span> 时，不会删掉已有的 <span style="color: #A9A9A9">**旧背景图**</span>，造成切换游戏后旧的背景图视频仍然生效的BUG。
+- ⚡ <span style="color: #32CD32">**Mod管理页面**</span>，现在 <span style="color: #FF4500">**新增的Mod**</span> 默认是 <span style="color: #00BFFF">**开启状态**</span> 了，添加完游戏里直接F10刷新就能看效果。
 
 # V3.2.9
 

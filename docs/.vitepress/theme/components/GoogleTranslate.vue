@@ -103,7 +103,7 @@ onMounted(() => {
       </svg>
     </div>
     
-    <select class="custom-select" :value="currentLang" @change="handleLanguageChange">
+    <select class="custom-select notranslate" translate="no" :value="currentLang" @change="handleLanguageChange">
       <option v-for="lang in languages" :key="lang.code" :value="lang.code">
         {{ lang.label }}
       </option>

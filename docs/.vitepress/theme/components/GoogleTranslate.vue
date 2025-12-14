@@ -212,4 +212,10 @@ font[style] {
   display: none !important;
   visibility: hidden !important;
 }
+
+@media (max-width: 768px) {
+  .translate-wrapper {
+    display: none;
+  }
+}
 </style>

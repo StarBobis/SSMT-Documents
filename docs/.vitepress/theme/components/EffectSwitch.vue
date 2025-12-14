@@ -179,7 +179,8 @@ onMounted(() => {
   }
 
   const savedState = localStorage.getItem('visual-effects-enabled')
-  if (savedState === 'true') {
+  // Default to enabled if not explicitly disabled (null or 'true')
+  if (savedState === 'true' || savedState === null) {
     isEffectsEnabled.value = true
     isLoading.value = true
     enableEffects()

@@ -222,8 +222,13 @@ export function initMeteorEffect() {
 
   const meteors: Meteor[] = []
 
+  let animationId: number | null = null
+
   function animate() {
     if (!ctx) return
+    // Safety check: stop if canvas is removed from DOM
+    if (!document.body.contains(canvas)) return
+
     ctx.clearRect(0, 0, width, height)
     
     // 增加流星出现频率 (0.015 -> 0.04)
@@ -240,8 +245,25 @@ export function initMeteorEffect() {
       }
     }
 
-    requestAnimationFrame(animate)
+    animationId = requestAnimationFrame(animate)
   }
 
   animate()
 }
+
+let animationId: number | null = null
+
+export function stopMeteorEffect() {
+  if (typeof window === 'undefined') return
+  
+  if (animationId !== null) {
+    cancelAnimationFrame(animationId)
+    animationId = null
+  }
+
+  const canvas = document.getElementById('meteor-canvas')
+  if (canvas) {
+    canvas.remove()
+  }
+}
+

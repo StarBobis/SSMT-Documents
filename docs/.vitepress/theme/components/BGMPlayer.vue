@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, watch } from 'vue'
 import { useData, withBase } from 'vitepress'
+import { isEffectsEnabled } from '../themeState'
 
 const { site } = useData()
 const isPlaying = ref(false)
@@ -30,6 +31,7 @@ watch(volume, (newVal) => {
 })
 
 onMounted(() => {
+  // Only load if effects are enabled (though v-if handles the component existence)
   if (audioRef.value) {
     audioRef.value.volume = volume.value
     
@@ -44,31 +46,33 @@ onMounted(() => {
       })
       .then(blob => {
         const blobUrl = URL.createObjectURL(blob)
-        audioRef.value.src = blobUrl
-        isLoaded.value = true
-        console.log('BGM loaded')
+        if (audioRef.value) {
+            audioRef.value.src = blobUrl
+            isLoaded.value = true
+            console.log('BGM loaded')
 
-        // 加载完成后尝试自动播放
-        const playPromise = audioRef.value.play()
-        if (playPromise !== undefined) {
-          playPromise.then(() => {
-            isPlaying.value = true
-            console.log("BGM autoplay started")
-          }).catch(error => {
-            console.log("BGM autoplay prevented by browser, waiting for user interaction")
-            isPlaying.value = false
-            
-            // 添加一次性点击监听器来触发播放
-            const startPlay = () => {
-              if (audioRef.value && !isPlaying.value) {
-                audioRef.value.play().then(() => {
-                  isPlaying.value = true
-                })
-              }
-              document.removeEventListener('click', startPlay)
+            // 加载完成后尝试自动播放
+            const playPromise = audioRef.value.play()
+            if (playPromise !== undefined) {
+            playPromise.then(() => {
+                isPlaying.value = true
+                console.log("BGM autoplay started")
+            }).catch(error => {
+                console.log("BGM autoplay prevented by browser, waiting for user interaction")
+                isPlaying.value = false
+                
+                // 添加一次性点击监听器来触发播放
+                const startPlay = () => {
+                if (audioRef.value && !isPlaying.value) {
+                    audioRef.value.play().then(() => {
+                    isPlaying.value = true
+                    })
+                }
+                document.removeEventListener('click', startPlay)
+                }
+                document.addEventListener('click', startPlay)
+            })
             }
-            document.addEventListener('click', startPlay)
-          })
         }
       })
       .catch(err => {
@@ -79,7 +83,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bgm-container">
+  <div class="bgm-container" v-if="isEffectsEnabled">
     <audio ref="audioRef" loop></audio>
     <button 
       class="bgm-toggle" 

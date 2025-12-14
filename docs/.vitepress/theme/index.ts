@@ -47,12 +47,6 @@ function addVideoBackground(base: string) {
   const video = document.createElement('video')
   video.className = 'bg-video'
   
-  // 确保路径正确：base 已经包含前后斜杠 (例如 /SSMT-Documents/)
-  // 如果 base 是 '/'，则路径为 '/background.webm'
-  // 如果 base 是 '/docs/'，则路径为 '/docs/background.webm'
-  const videoPath = `${base}background.webm`
-  video.src = videoPath
-  
   video.autoplay = true
   video.muted = true // 必须静音才能自动播放
   video.loop = true
@@ -66,35 +60,58 @@ function addVideoBackground(base: string) {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.3;
-    /* filter: blur(1px); 移除模糊以提高性能 */
+    opacity: 0; /* 初始隐藏，加载完成后淡入 */
     pointer-events: none;
     will-change: transform; /* 启用硬件加速 */
     transform: translateZ(0); /* 强制 GPU 渲染 */
+    transition: opacity 1.5s ease-in-out; /* 平滑淡入效果 */
   `
 
-  // 错误处理和自动播放尝试
-  video.addEventListener('error', (e) => {
-    console.error('Video load error. Path:', videoPath, e)
-    // 尝试 mp4 作为备选
-    if (video.src.endsWith('.webm')) {
-      console.log('Falling back to mp4...')
-      video.src = `${base}background.mp4`
-    }
-  })
+  document.body.appendChild(video)
 
-  video.addEventListener('canplay', () => {
-    console.log('Video ready to play')
-    video.play().catch(e => {
+  const playVideo = () => {
+    video.play().then(() => {
+      // 播放成功后淡入
+      video.style.opacity = '0.3'
+    }).catch(e => {
       console.warn('Autoplay prevented:', e)
       // 如果自动播放失败，添加一次性点击监听器来触发播放
       const playOnClick = () => {
-        video.play()
+        video.play().then(() => {
+          video.style.opacity = '0.3'
+        })
         document.removeEventListener('click', playOnClick)
       }
       document.addEventListener('click', playOnClick)
     })
-  })
+  }
 
-  document.body.appendChild(video)
+  const loadVideo = (url: string) => {
+    console.log('Start loading video:', url)
+    fetch(url)
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`)
+        return response.blob()
+      })
+      .then(blob => {
+        const blobUrl = URL.createObjectURL(blob)
+        video.src = blobUrl
+        
+        video.addEventListener('canplay', () => {
+          console.log('Video ready to play')
+          playVideo()
+        }, { once: true })
+      })
+      .catch(e => {
+        console.error('Video load error:', e)
+        // 尝试 mp4 作为备选
+        if (url.endsWith('.webm')) {
+          console.log('Falling back to mp4...')
+          loadVideo(`${base}background.mp4`)
+        }
+      })
+  }
+
+  // 开始加载
+  loadVideo(`${base}background.webm`)
 }

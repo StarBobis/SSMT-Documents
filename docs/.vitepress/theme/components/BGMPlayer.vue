@@ -6,9 +6,10 @@ const { site } = useData()
 const isPlaying = ref(false)
 const audioRef = ref(null)
 const volume = ref(0.52) // 默认小音量
+const isLoaded = ref(false) // 新增加载状态
 
 const togglePlay = () => {
-  if (!audioRef.value) return
+  if (!audioRef.value || !isLoaded.value) return // 未加载完成不能播放
   
   if (isPlaying.value) {
     audioRef.value.pause()
@@ -32,42 +33,63 @@ onMounted(() => {
   if (audioRef.value) {
     audioRef.value.volume = volume.value
     
-    // 尝试自动播放
-    const playPromise = audioRef.value.play()
-    if (playPromise !== undefined) {
-      playPromise.then(() => {
-        isPlaying.value = true
-        console.log("BGM autoplay started")
-      }).catch(error => {
-        console.log("BGM autoplay prevented by browser, waiting for user interaction")
-        isPlaying.value = false
-        
-        // 添加一次性点击监听器来触发播放
-        const startPlay = () => {
-          if (audioRef.value && !isPlaying.value) {
-            audioRef.value.play().then(() => {
-              isPlaying.value = true
-            })
-          }
-          document.removeEventListener('click', startPlay)
-        }
-        document.addEventListener('click', startPlay)
+    // 使用 fetch 预加载音频
+    const audioUrl = withBase('/background.ogg')
+    console.log('Start loading BGM:', audioUrl)
+    
+    fetch(audioUrl)
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`)
+        return response.blob()
       })
-    }
+      .then(blob => {
+        const blobUrl = URL.createObjectURL(blob)
+        audioRef.value.src = blobUrl
+        isLoaded.value = true
+        console.log('BGM loaded')
+
+        // 加载完成后尝试自动播放
+        const playPromise = audioRef.value.play()
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            isPlaying.value = true
+            console.log("BGM autoplay started")
+          }).catch(error => {
+            console.log("BGM autoplay prevented by browser, waiting for user interaction")
+            isPlaying.value = false
+            
+            // 添加一次性点击监听器来触发播放
+            const startPlay = () => {
+              if (audioRef.value && !isPlaying.value) {
+                audioRef.value.play().then(() => {
+                  isPlaying.value = true
+                })
+              }
+              document.removeEventListener('click', startPlay)
+            }
+            document.addEventListener('click', startPlay)
+          })
+        }
+      })
+      .catch(err => {
+        console.error('Failed to load BGM:', err)
+      })
   }
 })
 </script>
 
 <template>
   <div class="bgm-container">
-    <audio ref="audioRef" loop :src="withBase('/background.ogg')"></audio>
+    <audio ref="audioRef" loop></audio>
     <button 
       class="bgm-toggle" 
       @click="togglePlay" 
-      :title="isPlaying ? '暂停背景音乐' : '播放背景音乐'"
+      :title="!isLoaded ? '正在加载背景音乐...' : (isPlaying ? '暂停背景音乐' : '播放背景音乐')"
+      :disabled="!isLoaded"
     >
       <div class="icon-container" :class="{ playing: isPlaying }">
-        <span v-if="isPlaying">🎵</span>
+        <span v-if="!isLoaded" class="loading">⏳</span>
+        <span v-else-if="isPlaying">🎵</span>
         <span v-else class="muted">🔇</span>
       </div>
     </button>

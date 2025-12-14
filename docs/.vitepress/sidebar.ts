@@ -13,6 +13,7 @@ export const sidebar = {
         { text: '无法打开 LOD.exe', link: '/Tutorials/SSMT/SSMT3/CantOpenLODExe/CantOpenLODExe' },
         { text: '导入模型后UV错误怎么办', link: '/Tutorials/SSMT/SSMT3/WrongUVAfterImport/WrongUVAfterImport' },
         { text: 'SSMT版本更新日志', link: '/Tutorials/SSMT/SSMT3/ChangeLog/ChangeLog' },
+        { text: '指定IB列表Dump功能', link: '/Tutorials/SSMT/SSMT3/DumpFileTooHuge/DumpFileTooHuge' },
       
       ]
     },

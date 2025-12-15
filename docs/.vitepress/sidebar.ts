@@ -105,6 +105,7 @@ export const sidebar = {
           { text: '崩铁角色黄色描边修复', link: '/Tutorials/Games/SRMI/YellowOutlineFix/YellowOutlineFix' },
           { text: '部分动作导致Mod炸裂', link: '/Tutorials/Games/SRMI/ActionModCrash/ActionModCrash' },
           { text: 'AI 插针导致 Mod 炸裂', link: '/Tutorials/Games/SRMI/AIBrokeMods/AIBrokeMods' },
+          { text: '崩铁槽位风格贴图问题处理', link: '/Tutorials/Games/SRMI/SlotStyleTextureProblem/SlotStyleTextureProblem' },
         ]
       },
       {

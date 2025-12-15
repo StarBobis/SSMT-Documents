@@ -469,7 +469,7 @@ drawindexed = 88515,0,0
 
 ![alt text](image-9.png)
 
-可以看到，人物 **特别的亮** 💡，这个就是使用 **槽位风格** 会导致的问题。因为在不同的 <font color="#FF4500">DrawCall</font> 中使用了不同的 <font color="#8A2BE2">Pixel Shader</font>，不同的 <font color="#8A2BE2">Pixel Shader</font> 读取的贴图槽位又不同，所以导致部分 <font color="#8A2BE2">Shader</font> 读取不到正确的贴图，就导致贴图可能出现异常。这个问题在其他的场景中可能会更严重，这里时间有限就不一一测试了，我们直接上 **解决方案** 💊。
+可以看到，人物 **特别的亮** 💡，我们 **假设** 这个就是使用 **槽位风格** 会导致的问题。因为在不同的 <font color="#FF4500">DrawCall</font> 中使用了不同的 <font color="#8A2BE2">Pixel Shader</font>，不同的 <font color="#8A2BE2">Pixel Shader</font> 读取的贴图槽位又不同，所以导致部分 <font color="#8A2BE2">Shader</font> 读取不到正确的贴图，就导致贴图可能出现异常。这个问题在其他的场景中可能会更严重，这里时间有限就不一一测试了，我们直接上 **解决方案** 💊。
 
 首先我们需要看看这个场景下所有的 <font color="#FF4500">DrawCall</font>，看看每个贴图都用到了哪些槽位。没错，这个修复 **非常麻烦** 🤯，需要逐个 <font color="#8A2BE2">Shader</font> 测试并记录所有的槽位，这意味着你要对所有的可能出错的场景都测试一遍，并且记录其槽位。
 

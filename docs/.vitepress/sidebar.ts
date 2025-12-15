@@ -162,6 +162,15 @@ export const sidebar = {
         
       ]
     }],
+    '/AuthorTutorial/ZZZTutorial/':[{
+      text: 'ZZZ Mod制作教程',
+      items: [
+          { text: '(1)提取模型', link: '/AuthorTutorial/ZZZTutorial/T001ExtractModel/T001ExtractModel' },
+          { text: '(2)MMD模型制作为Mod', link: '/AuthorTutorial/ZZZTutorial/T002MMDModelToMod/T002MMDModelToMod' },
+
+      ]
+    }],
+
 
 
     '/Tutorials/Plugins/':

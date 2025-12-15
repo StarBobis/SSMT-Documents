@@ -30,7 +30,12 @@ export const nav = [
      items: [
       { text: '3Dmigoto-Sword-Lv5插件', link: '/Tutorials/Plugins/SSMT-Reverse-Plugin/T001Introduction/T001Introduction' },
       { text: 'SSMT-Protect插件', link: '/Tutorials/Plugins/SSMT-Protect/Introduction/Introduction' },
-      
+    ]
+  },
+  { 
+    text: '基础教程', 
+     items: [
+      { text: 'ZZZ Mod制作教程', link: '/AuthorTutorial/ZZZTutorial/T001ExtractModel/T001ExtractModel' },
     ]
   },
 ];

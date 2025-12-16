@@ -86,6 +86,8 @@ export const sidebar = {
           { text: '原神Mod不报错方法', link: '/Tutorials/Games/GIMI/PlayWithoutError/PlayWithoutError' },
           { text: 'Mod抖动问题', link: '/Tutorials/Games/GIMI/ModIsShaking/ModIsShaking' },
           { text: 'OR Fix 和 NN Fix', link: '/Tutorials/Games/GIMI/ORFixAndNNFix/ORFixAndNNFix' },
+          { text: '10010-4001错误弹窗', link: '/Tutorials/Games/GIMI/10010-4001/10010-4001' },
+
         ]
       },
       {

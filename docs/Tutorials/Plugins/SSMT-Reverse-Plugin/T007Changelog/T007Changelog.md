@@ -1,7 +1,11 @@
 # 📋 SSMT-Reverse Changelog
+
+## 🔄 V1.0.8.3
+- 鸣潮 <span style="color:#FF7043;">一键</span><span style="color:#1976D2;">逆向</span> 出来的 <span style="color:#FF7043;">fmt</span> 文件新增 <span style="color:#43A047;">clean_custom_normal</span> 属性，在使用最新版 <span style="color:#1976D2;">TheHerta3</span> 插件导入时会自动清除自定义法向数据。
+
 ## 🔄 V1.0.8.2
 
-- **重要逆向逻辑修复**：修复了一键逆向页面的`一键逆向基于Buffer的分支Mod的ini`在存在按键切换时，部分ini写法情况下无法正确分辨出不同的按键切换内容的BUG。
+- **重要逆向逻辑修复**：修复了 <span style="color:#FF7043;">一键</span><span style="color:#1976D2;">逆向</span> 页面中 `一键逆向基于Buffer的分支Mod的ini` 在存在 <kbd>按键</kbd> 切换时，部分 ini 写法情况下无法正确分辨出不同的按键切换内容的 <span style="color:#D32F2F;">BUG</span>。
 
 ## 🔄 V1.0.8.1
 
@@ -31,6 +35,11 @@
 所以后续更新日志这里只会描述 3Dmigoto-Sword-Lv5 的更新日志，关于 3Dmigoto-Sword-Lv6 的更新日志可以去 Github 的 Release 中自行查看：
 
 > **GitHub Releases**: [3Dmigoto-Sword-Lv6](https://github.com/StarBobis/3Dmigoto-Sword-Lv6)
+>
+> <div style="border:1px solid #90CAF9; border-radius:8px; background:#E3F2FD; padding:8px; margin:8px 0;">
+> <b>🔗 访问： </b><br>
+> <a href="https://github.com/StarBobis/3Dmigoto-Sword-Lv6" style="color:#1976D2; font-weight:bold;">3Dmigoto-Sword-Lv6 — GitHub Releases</a>
+> </div>
 
 ## 🔄 V1.0.9
 
@@ -53,7 +62,7 @@
 
 ## 🔄 V1.0.7.6
 
-- 【一键逆向 Mod 的 ini】(英文 Reverse Single Mod's Ini) 以及【一键逆向基于 Buffer 的分支 Mod 的 ini】(英文 Reverse Buffer Based Toggle Mod's Ini) 逆向出的格式得到了改变，现在变得和【一键逆向基于 DrawIndexed 的分支 Mod 的 ini】(英文 Reverse DrawIndexed Based Toggle Mod's Ini) 结果相同了，方便使用 Blender 插件进行一键导入和快速排除错误数据类型的操作。
+- 【<span style="color:#FF7043;">一键</span><span style="color:#1976D2;">逆向</span> Mod 的 ini】(英文 Reverse Single Mod's Ini) 以及【<span style="color:#FF7043;">一键</span><span style="color:#1976D2;">逆向</span> 基于 Buffer 的分支 Mod 的 ini】(英文 Reverse Buffer Based Toggle Mod's Ini) 逆向出的格式得到了改变，现在变得和【<span style="color:#FF7043;">一键</span><span style="color:#1976D2;">逆向</span> 基于 DrawIndexed 的分支 Mod 的 ini】(英文 Reverse DrawIndexed Based Toggle Mod's Ini) 结果相同了，方便使用 <span style="color:#1976D2;">Blender</span> 插件进行 <span style="background:#FFFDE7; color:#D84315; font-weight:bold;">一键导入</span> 和快速排除错误数据类型的操作。
 
 ![格式变更](image-17.png)
 
@@ -159,7 +168,7 @@
 
 ## 🔄 V1.0.6.2
 
-- 🔧 重要更新：现在【一键逆向 Mod 的 ini】和【一键逆向 DrawIndexed 分支 Mod 的 ini】以及【一键逆向 Toggle 按键切换 Mod 的 ini】均支持全自动解析和破解使用了反 Mod 逆向之 IB 膨胀混淆技术的 Mod。
+- 🔧 重要更新：现在【一键<span style="color:#1976D2;">逆向</span> Mod 的 ini】和【一键<span style="color:#1976D2;">逆向</span> DrawIndexed 分支 Mod 的 ini】以及【一键<span style="color:#1976D2;">逆向</span> Toggle <kbd>按键</kbd> 切换 Mod 的 ini】均支持全自动解析和破解使用了反 Mod 逆向之 IB 膨胀混淆技术的 Mod。
 
 
 # V1.0.6.1
@@ -178,7 +187,7 @@
 - 现在逆向出来生成的 FMT 文件中新增 FlipFaceOrientation 设计，用于控制导入 Blender 时是否翻转面朝向，其它游戏默认为 False，只有 WWMI 为 True，解决了 WWMI 逆向出来的 Mod 导入到 Blender 后面朝向不正确的问题。（需要配合 SSMT Blender Plugin V1.5.9 或以上版本使用）
 - 现在逆向全自动解析新增了对 CustomShaderTransparency 中的 DrawIndexed 解析，以后遇到这种不再需要手动复制粘贴过去了。
 - 逆向普通单个 Mod 的 ini 中的 Blend 校验进行了升级，输出的文件名后追加 _ 和 Resource 资源排列索引，在 Texcoord 和 Blend 槽位的长度相同时会自动进行校验，即使校验失败也能够正确的逆向出两个不同的数据类型，方便导入 Blender 时进行选择（而不是像旧版本一样只有一个数据类型且可能是错误的导致导入 Blender 后卡死，现在即使校验失败也有多个数据类型，确保总有一个是能用的，如果校验成功则只有一个，大大提高了这种特殊情况下的 Mod 逆向成功率）
-- 现在一键逆向后的贴图转换，不会再搜索 png 格式贴图加入待转换目录了，一定程度上可以避免多次重复执行逆向时，已经转换出来的 ConvertedTextures 被再次转换，如此嵌套递归导致 Mod 文件夹充满被转换的冗余贴图导致空间占用越来越大的且重复执行逆向时占用时间越来越长的问题。
+- 现在 <span style="color:#FF7043;">一键</span><span style="color:#1976D2;">逆向</span> 后的贴图转换，不会再搜索 <span style="color:#43A047;">png</span> 格式贴图加入待转换目录了，一定程度上可以避免多次重复执行逆向时，已经转换出来的 ConvertedTextures 被再次转换，如此嵌套递归导致 <span style="color:#FF7043;">Mod</span> 文件夹充满被转换的冗余贴图导致空间占用越来越大的且重复执行逆向时占用时间越来越长的问题。
 - 现在一键逆向后，会把 dds 贴图转换为对应格式放到逆向出的 Reverse 文件夹下了，但是要注意，如果文件夹结构出现多层嵌套的贴图如果出现名称重复则会进行覆盖，不过你仍然可以在原始 Mod 文件夹中找到完整的被转换后的贴图。（逆向执行时间由于额外的贴图转换步骤，会略微延长）
 
 ![贴图转换](image-12.png)
@@ -340,3 +349,17 @@
 ## 🔄 V1.0.4.0
 
 - 🔄 此版本主要更新了一个鸣潮的数据类型，用于兼容 WWMI-Tools 中含有 COLOR1 的数据类型（在 DBMT 正确的数据类型中，WWMI-Tools 对应的 COLOR1 是 DBMT 的 TEXCOORD1）以解决逆向出的模型在使用 WWMI-Tools 导出时缺失 COLOR1，以及生成 Mod 后轮廓线丢失的问题。
+
+---
+
+## 免责声明
+
+> <div style="border:1px solid #FFCCBC; border-radius:8px; background:#FFF3E0; padding:10px; margin:8px 0;">
+> <b>⚠️ 免责声明：</b> 本文档仅供学习、研究与交流使用；禁止直接用于商业用途。文中信息仅供参考，作者与发布者不对因使用本文档内容而产生的任何问题承担责任。本文档内容部分由 AI 协助生成，仅供参考。
+> </div>
+
+---
+
+_最后更新：2025 年 12 月 16 日_
+
+> 感谢阅读！希望这份日志既让你安心，也让你微笑（大约 1%）。

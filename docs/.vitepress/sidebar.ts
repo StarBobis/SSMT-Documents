@@ -50,8 +50,6 @@ export const sidebar = {
         { text: 'Vertex Color Master', link: '/Tutorials/SSMT/Blender/VertexColorMaster/VertexColorMaster' },
         { text: 'LEOAlphaPaint', link: '/Tutorials/SSMT/Blender/LEOAlphaPaint/LEOAlphaPaint' },
         { text: 'Screenshot Keys', link: '/Tutorials/SSMT/Blender/ScreenshotKeys/ScreenshotKeys' },
-        
-
       ]
     },
     {

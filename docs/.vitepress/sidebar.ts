@@ -48,7 +48,10 @@ export const sidebar = {
         { text: 'MikuMikuDance', link: '/Tutorials/SSMT/Blender/MikuMikuDance/MikuMikuDance' },
         { text: 'MikuMikuRig', link: '/Tutorials/SSMT/Blender/MikuMikuRig/MikuMikuRig' },
         { text: 'Vertex Color Master', link: '/Tutorials/SSMT/Blender/VertexColorMaster/VertexColorMaster' },
+        { text: 'LEOAlphaPaint', link: '/Tutorials/SSMT/Blender/LEOAlphaPaint/LEOAlphaPaint' },
         { text: 'Screenshot Keys', link: '/Tutorials/SSMT/Blender/ScreenshotKeys/ScreenshotKeys' },
+        
+
       ]
     },
     {

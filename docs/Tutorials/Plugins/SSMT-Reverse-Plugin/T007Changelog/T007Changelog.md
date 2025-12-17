@@ -1,7 +1,7 @@
 # 📋 SSMT-Reverse Changelog
 
 ## 🔄 V1.0.8.3
-- 鸣潮 <span style="color:#FF7043;">一键</span><span style="color:#1976D2;">逆向</span> 出来的 <span style="color:#FF7043;">fmt</span> 文件新增 <span style="color:#43A047;">clean_custom_normal</span> 属性，在使用最新版 <span style="color:#1976D2;">TheHerta3</span> 插件导入时会自动清除自定义法向数据。
+- 
 
 ## 🔄 V1.0.8.2
 

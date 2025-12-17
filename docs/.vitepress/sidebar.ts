@@ -77,51 +77,51 @@ export const sidebar = {
   ],
 
     '/Tutorials/Games/':[
-      {
-        text: 'GIMI',
-        items: [
-          { text: 'Mod变成一坨', link: '/Tutorials/Games/GIMI/ModDistortion/ModDistortion' },
-          { text: 'COLOR不同导致Mod无法显示', link: '/Tutorials/Games/GIMI/ColorMismatch/ColorMismatch' },
-          { text: '原神角色轮廓线修复', link: '/Tutorials/Games/GIMI/OutlineFix/OutlineFix' },
-          { text: '原神脸部隐藏问题', link: '/Tutorials/Games/GIMI/FaceHidingIssue/FaceHidingIssue' },
-          { text: '原神Mod不报错方法', link: '/Tutorials/Games/GIMI/PlayWithoutError/PlayWithoutError' },
-          { text: 'Mod抖动问题', link: '/Tutorials/Games/GIMI/ModIsShaking/ModIsShaking' },
-          { text: 'OR Fix 和 NN Fix', link: '/Tutorials/Games/GIMI/ORFixAndNNFix/ORFixAndNNFix' },
-          { text: '10010-4001错误弹窗', link: '/Tutorials/Games/GIMI/10010-4001/10010-4001' },
+      // {
+      //   text: 'GIMI',
+      //   items: [
+      //     { text: 'Mod变成一坨', link: '/Tutorials/Games/GIMI/ModDistortion/ModDistortion' },
+      //     { text: 'COLOR不同导致Mod无法显示', link: '/Tutorials/Games/GIMI/ColorMismatch/ColorMismatch' },
+      //     { text: '原神角色轮廓线修复', link: '/Tutorials/Games/GIMI/OutlineFix/OutlineFix' },
+      //     { text: '原神脸部隐藏问题', link: '/Tutorials/Games/GIMI/FaceHidingIssue/FaceHidingIssue' },
+      //     { text: '原神Mod不报错方法', link: '/Tutorials/Games/GIMI/PlayWithoutError/PlayWithoutError' },
+      //     { text: 'Mod抖动问题', link: '/Tutorials/Games/GIMI/ModIsShaking/ModIsShaking' },
+      //     { text: 'OR Fix 和 NN Fix', link: '/Tutorials/Games/GIMI/ORFixAndNNFix/ORFixAndNNFix' },
+      //     { text: '10010-4001错误弹窗', link: '/Tutorials/Games/GIMI/10010-4001/10010-4001' },
 
-        ]
-      },
-      {
-        text: 'HIMI',
-        items: [
-          { text: '崩坏三角色轮廓线修复', link: '/Tutorials/Games/HIMI/OutlineFix/OutlineFix' },
-          { text: '第二套UVMap的用处', link: '/Tutorials/Games/HIMI/SecondUVMapUsage/SecondUVMapUsage' },
-        ]
-      },
-      {
-        text: 'SRMI',
-        items: [
-          { text: 'UV2是干什么的', link: '/Tutorials/Games/SRMI/WhatIsUV2/WhatIsUV2' },
-          { text: '动态Mod导致角色描边抽搐', link: '/Tutorials/Games/SRMI/DynamicModOutlineGlitch/DynamicModOutlineGlitch' },
-          { text: '贴图槽位乱窜问题', link: '/Tutorials/Games/SRMI/TextureSlotIssue/TextureSlotIssue' },
-          { text: '崩铁角色轮廓线修复', link: '/Tutorials/Games/SRMI/OutlineFix/OutlineFix' },
-          { text: '崩铁角色黄色描边修复', link: '/Tutorials/Games/SRMI/YellowOutlineFix/YellowOutlineFix' },
-          { text: '部分动作导致Mod炸裂', link: '/Tutorials/Games/SRMI/ActionModCrash/ActionModCrash' },
-          { text: 'AI 插针导致 Mod 炸裂', link: '/Tutorials/Games/SRMI/AIBrokeMods/AIBrokeMods' },
-          { text: '崩铁槽位风格贴图问题处理', link: '/Tutorials/Games/SRMI/SlotStyleTextureProblem/SlotStyleTextureProblem' },
-        ]
-      },
-      {
-        text: 'ZZMI',
-        items: [
-          { text: 'Mod法线贴图错误问题', link: '/Tutorials/Games/ZZMI/NormalMapError/NormalMapError' },
-          { text: '上下身体分开的问题', link: '/Tutorials/Games/ZZMI/BodySeparationIssue/BodySeparationIssue' },
-          { text: '关闭动态高精度', link: '/Tutorials/Games/ZZMI/DisableDynamicHighPrecision/DisableDynamicHighPrecision' },
-          { text: '完美阴影和轮廓线', link: '/Tutorials/Games/ZZMI/PerfectShadowAndOutline/PerfectShadowAndOutline' },
-          { text: '虚假头发问题', link: '/Tutorials/Games/ZZMI/FakeHairIssue/FakeHairIssue' },
-          { text: '爱丽丝的剑替换后消失', link: '/Tutorials/Games/ZZMI/AliceSwordDisappear/AliceSwordDisappear' },
-        ]
-      },
+      //   ]
+      // },
+      // {
+      //   text: 'HIMI',
+      //   items: [
+      //     { text: '崩坏三角色轮廓线修复', link: '/Tutorials/Games/HIMI/OutlineFix/OutlineFix' },
+      //     { text: '第二套UVMap的用处', link: '/Tutorials/Games/HIMI/SecondUVMapUsage/SecondUVMapUsage' },
+      //   ]
+      // },
+      // {
+      //   text: 'SRMI',
+      //   items: [
+      //     { text: 'UV2是干什么的', link: '/Tutorials/Games/SRMI/WhatIsUV2/WhatIsUV2' },
+      //     { text: '动态Mod导致角色描边抽搐', link: '/Tutorials/Games/SRMI/DynamicModOutlineGlitch/DynamicModOutlineGlitch' },
+      //     { text: '贴图槽位乱窜问题', link: '/Tutorials/Games/SRMI/TextureSlotIssue/TextureSlotIssue' },
+      //     { text: '崩铁角色轮廓线修复', link: '/Tutorials/Games/SRMI/OutlineFix/OutlineFix' },
+      //     { text: '崩铁角色黄色描边修复', link: '/Tutorials/Games/SRMI/YellowOutlineFix/YellowOutlineFix' },
+      //     { text: '部分动作导致Mod炸裂', link: '/Tutorials/Games/SRMI/ActionModCrash/ActionModCrash' },
+      //     { text: 'AI 插针导致 Mod 炸裂', link: '/Tutorials/Games/SRMI/AIBrokeMods/AIBrokeMods' },
+      //     { text: '崩铁槽位风格贴图问题处理', link: '/Tutorials/Games/SRMI/SlotStyleTextureProblem/SlotStyleTextureProblem' },
+      //   ]
+      // },
+      // {
+      //   text: 'ZZMI',
+      //   items: [
+      //     { text: 'Mod法线贴图错误问题', link: '/Tutorials/Games/ZZMI/NormalMapError/NormalMapError' },
+      //     { text: '上下身体分开的问题', link: '/Tutorials/Games/ZZMI/BodySeparationIssue/BodySeparationIssue' },
+      //     { text: '关闭动态高精度', link: '/Tutorials/Games/ZZMI/DisableDynamicHighPrecision/DisableDynamicHighPrecision' },
+      //     { text: '完美阴影和轮廓线', link: '/Tutorials/Games/ZZMI/PerfectShadowAndOutline/PerfectShadowAndOutline' },
+      //     { text: '虚假头发问题', link: '/Tutorials/Games/ZZMI/FakeHairIssue/FakeHairIssue' },
+      //     { text: '爱丽丝的剑替换后消失', link: '/Tutorials/Games/ZZMI/AliceSwordDisappear/AliceSwordDisappear' },
+      //   ]
+      // },
       {
         text: 'WWMI',
         items: [
@@ -166,14 +166,20 @@ export const sidebar = {
         
       ]
     }],
-    '/AuthorTutorial/ZZZTutorial/':[{
-      text: 'ZZZ Mod制作教程',
-      items: [
-          { text: '(1)提取模型', link: '/AuthorTutorial/ZZZTutorial/T001ExtractModel/T001ExtractModel' },
-          { text: '(2)MMD模型制作为Mod', link: '/AuthorTutorial/ZZZTutorial/T002MMDModelToMod/T002MMDModelToMod' },
+    // '/AuthorTutorial/ZZZTutorial/':[{
+    //   text: 'ZZZ Mod制作教程',
+    //   items: [
+    //       { text: '(1)提取模型', link: '/AuthorTutorial/ZZZTutorial/T001ExtractModel/T001ExtractModel' },
+    //       { text: '(2.1)准备篇', link: '/AuthorTutorial/ZZZTutorial/T002_01_Preparation/T002_01_Preparation' },
+    //       { text: '(2.2)基础调整篇', link: '/AuthorTutorial/ZZZTutorial/T002_02_BasicAdjustments/T002_02_BasicAdjustments' },
+    //       { text: '(2.3)MMD模型分割篇', link: '/AuthorTutorial/ZZZTutorial/T002_03_SplitMMD/T002_03_SplitMMD' },
+    //       { text: '(2.4)原模型处理篇', link: '/AuthorTutorial/ZZZTutorial/T002_04_ProcessOriginal/T002_04_ProcessOriginal' },
+    //       { text: '(2.5)顶点组自动改名篇', link: '/AuthorTutorial/ZZZTutorial/T002_05_VertexGroupRenaming/T002_05_VertexGroupRenaming' },
+    //       { text: '(2.6)合并篇', link: '/AuthorTutorial/ZZZTutorial/T002_06_Merging/T002_06_Merging' },
+    //       { text: '(2.7)完结篇', link: '/AuthorTutorial/ZZZTutorial/T002_07_Finalizing/T002_07_Finalizing' },
 
-      ]
-    }],
+    //   ]
+    // }],
 
 
 

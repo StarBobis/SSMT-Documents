@@ -13,10 +13,10 @@ export const nav = [
   { 
     text: '各游戏常见问题',
     items: [
-      // { text: 'GIMI', link: '/Tutorials/Games/GIMI/PlayWithoutError/PlayWithoutError' },
-      // { text: 'HIMI', link: '/Tutorials/Games/HIMI/OutlineFix/OutlineFix' },
-      // { text: 'SRMI', link: '/Tutorials/Games/SRMI/WhatIsUV2/WhatIsUV2' },
-      // { text: 'ZZMI', link: '/Tutorials/Games/ZZMI/NormalMapError/NormalMapError' },
+      { text: 'GIMI', link: '/Tutorials/Games/GIMI/ModDistortion/ModDistortion' },
+      { text: 'HIMI', link: '/Tutorials/Games/HIMI/OutlineFix/OutlineFix' },
+      { text: 'SRMI', link: '/Tutorials/Games/SRMI/WhatIsUV2/WhatIsUV2' },
+      { text: 'ZZMI', link: '/Tutorials/Games/ZZMI/NormalMapError/NormalMapError' },
       { text: 'WWMI', link: '/Tutorials/Games/WWMI/ProcessPathConfig/ProcessPathConfig' },
       { text: 'GF2', link: '/Tutorials/Games/GF2/ModelReductionAndOffset/ModelReductionAndOffset' },
       { text: 'YYSLS', link: '/Tutorials/Games/YYSLS/InjectionIssue/InjectionIssue' },
@@ -32,10 +32,10 @@ export const nav = [
       { text: 'SSMT-Protect插件', link: '/Tutorials/Plugins/SSMT-Protect/Introduction/Introduction' },
     ]
   },
-  // { 
-  //   text: '基础教程', 
-  //    items: [
-  //     { text: 'ZZZ Mod制作教程', link: '/AuthorTutorial/ZZZTutorial/T001ExtractModel/T001ExtractModel' },
-  //   ]
-  // },
+  { 
+    text: '基础教程', 
+     items: [
+      { text: 'ZZZ Mod制作教程', link: '/AuthorTutorial/ZZZTutorial/T001ExtractModel/T001ExtractModel' },
+    ]
+  },
 ];

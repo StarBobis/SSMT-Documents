@@ -10,7 +10,8 @@ https://mega.nz/folder/9md3xBYL#yARidR87zgWhBGVCx_m7WQ
 ## V3.3.6
 - 更新了Dev版本的d3d11.dll，提高了默认的VertexLimitRaise的顶点数，防止部分年久失修的古董Mod无法完整显示。
 - 修复了崩铁提取逻辑的一个严重BUG，该BUG会导致填写多个DrawIB时，所有DrawIB都无法正确识别数据类型。
-
+- 添加了崩铁大丽花的数据类型。
+- 修复了纯净模式无法启动游戏的BUG。
 
 ## V3.3.5
 - 优化主页布局，背景图和图标相关设置移动到最上面，现在只有GIMI会显示其它设置那一栏的东西了，防止视觉干扰。

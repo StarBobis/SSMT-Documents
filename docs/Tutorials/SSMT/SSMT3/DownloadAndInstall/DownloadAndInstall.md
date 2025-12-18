@@ -13,11 +13,7 @@
 
 前往以下链接下载最新版本的 **SSMT3**：
 
-[https://github.com/StarBobis/SSMT3](https://github.com/StarBobis/SSMT3)
-
-![alt text](image.png)
-
-![alt text](image-1.png)
+https://mega.nz/folder/9md3xBYL#yARidR87zgWhBGVCx_m7WQ
 
 > 💡 **小贴士**：你看到这篇文档的时候，也许已经更新了很多版本了，没关系，只要下载最新版的 **zip 文件** 就好了。这里只演示 zip 文件的解压使用，因为只推荐使用 zip 文件的方式安装。
 

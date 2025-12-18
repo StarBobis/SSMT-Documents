@@ -170,13 +170,14 @@ export const sidebar = {
       text: 'ZZZ Mod制作教程',
       items: [
           { text: '(1)提取模型', link: '/AuthorTutorial/ZZZTutorial/T001ExtractModel/T001ExtractModel' },
-          { text: '(2.1)准备篇', link: '/AuthorTutorial/ZZZTutorial/T002_01_Preparation/T002_01_Preparation' },
-          { text: '(2.2)基础调整篇', link: '/AuthorTutorial/ZZZTutorial/T002_02_BasicAdjustments/T002_02_BasicAdjustments' },
-          { text: '(2.3)MMD模型分割篇', link: '/AuthorTutorial/ZZZTutorial/T002_03_SplitMMD/T002_03_SplitMMD' },
-          { text: '(2.4)原模型处理篇', link: '/AuthorTutorial/ZZZTutorial/T002_04_ProcessOriginal/T002_04_ProcessOriginal' },
-          { text: '(2.5)顶点组自动改名篇', link: '/AuthorTutorial/ZZZTutorial/T002_05_VertexGroupRenaming/T002_05_VertexGroupRenaming' },
-          { text: '(2.6)合并篇', link: '/AuthorTutorial/ZZZTutorial/T002_06_Merging/T002_06_Merging' },
-          { text: '(2.7)完结篇', link: '/AuthorTutorial/ZZZTutorial/T002_07_Finalizing/T002_07_Finalizing' },
+          { text: '(2)准备篇', link: '/AuthorTutorial/ZZZTutorial/T002Preparation/T002Preparation' },
+          { text: '(3)基础调整篇', link: '/AuthorTutorial/ZZZTutorial/T003BasicAdjustments/T003BasicAdjustments' },
+          { text: '(4)MMD模型分割篇', link: '/AuthorTutorial/ZZZTutorial/T004SplitMMD/T004SplitMMD' },
+          { text: '(5)原模型处理篇', link: '/AuthorTutorial/ZZZTutorial/T005ProcessOriginal/T005ProcessOriginal' },
+          { text: '(6)顶点组自动改名篇', link: '/AuthorTutorial/ZZZTutorial/T006VertexGroupRenaming/T006VertexGroupRenaming' },
+          { text: '(7)合并篇', link: '/AuthorTutorial/ZZZTutorial/T007Merging/T007Merging' },
+          { text: '(8)顶点组处理篇', link: '/AuthorTutorial/ZZZTutorial/T008Finalizing/T008Finalizing' },
+          { text: '(9)生成Mod与贴图篇', link: '/AuthorTutorial/ZZZTutorial/T009GenerateMod/T009GenerateMod' },
 
       ]
     }],

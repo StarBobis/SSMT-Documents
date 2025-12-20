@@ -178,7 +178,7 @@ export const sidebar = {
           { text: '(7)合并篇', link: '/AuthorTutorial/ZZZTutorial/T007Merging/T007Merging' },
           { text: '(8)顶点组处理篇', link: '/AuthorTutorial/ZZZTutorial/T008Finalizing/T008Finalizing' },
           { text: '(9)生成Mod与贴图篇', link: '/AuthorTutorial/ZZZTutorial/T009GenerateMod/T009GenerateMod' },
-
+ 
       ]
     }],
 

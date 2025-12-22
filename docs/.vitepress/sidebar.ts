@@ -221,17 +221,17 @@ export const sidebar = {
         ]
       }
 ,
-      {
-        text: 'SSMT-Protect插件',
-        items: 
-        [
-          { text: '(1)SSMT-Protect插件介绍', link: '/Tutorials/Plugins/SSMT-Protect/Introduction/Introduction' },
-          { text: '(2)安装方法', link: '/Tutorials/Plugins/SSMT-Protect/Installation/Installation' },
-          { text: '(3)加密功能说明', link: '/Tutorials/Plugins/SSMT-Protect/EncryptionFeatures/EncryptionFeatures' },
-          { text: '(4)Mod锁机器码功能说明', link: '/Tutorials/Plugins/SSMT-Protect/HardwareLock/HardwareLock' },
+      // {
+      //   text: 'SSMT-Protect插件',
+      //   items: 
+      //   [
+      //     { text: '(1)SSMT-Protect插件介绍', link: '/Tutorials/Plugins/SSMT-Protect/Introduction/Introduction' },
+      //     { text: '(2)安装方法', link: '/Tutorials/Plugins/SSMT-Protect/Installation/Installation' },
+      //     { text: '(3)加密功能说明', link: '/Tutorials/Plugins/SSMT-Protect/EncryptionFeatures/EncryptionFeatures' },
+      //     { text: '(4)Mod锁机器码功能说明', link: '/Tutorials/Plugins/SSMT-Protect/HardwareLock/HardwareLock' },
 
-        ]
-      }
+      //   ]
+      // }
 
      
     ],

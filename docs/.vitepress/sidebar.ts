@@ -11,10 +11,8 @@ export const sidebar = {
         { text: 'SSMT 支持的游戏', link: '/Tutorials/SSMT/SSMT3/SSMTSupportedGames/SSMTSupportedGames' },
         { text: '无法打开 LOD.exe', link: '/Tutorials/SSMT/SSMT3/CantOpenLODExe/CantOpenLODExe' },
         { text: '导入模型后UV错误怎么办', link: '/Tutorials/SSMT/SSMT3/WrongUVAfterImport/WrongUVAfterImport' },
-        { text: 'SSMT版本更新日志', link: '/Tutorials/SSMT/SSMT3/ChangeLog/ChangeLog' },
         { text: '如何更新SSMT到新版本?', link: '/Tutorials/SSMT/SSMT3/SSMTVersionUpdate/SSMTVersionUpdate' },
         { text: '指定IB列表Dump功能', link: '/Tutorials/SSMT/SSMT3/DumpFileTooHuge/DumpFileTooHuge' },
-      
       ]
     },
     {
@@ -109,6 +107,8 @@ export const sidebar = {
           { text: '部分动作导致Mod炸裂', link: '/Tutorials/Games/SRMI/ActionModCrash/ActionModCrash' },
           { text: 'AI 插针导致 Mod 炸裂', link: '/Tutorials/Games/SRMI/AIBrokeMods/AIBrokeMods' },
           { text: '崩铁槽位风格贴图问题处理', link: '/Tutorials/Games/SRMI/SlotStyleTextureProblem/SlotStyleTextureProblem' },
+          //HowToDump
+          { text: '崩铁如何正确Dump并提取模型', link: '/Tutorials/Games/SRMI/HowToDump/HowToDump' },
         ]
       },
       {

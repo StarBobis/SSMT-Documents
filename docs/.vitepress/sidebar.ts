@@ -169,7 +169,7 @@ export const sidebar = {
     '/AuthorTutorial/ZZZTutorial/':[{
       text: 'ZZZ Mod制作教程',
       items: [
-          { text: '(1)提取模型', link: '/AuthorTutorial/ZZZTutorial/T001ExtractModel/T001ExtractModel' },
+         { text: '(1)提取模型', link: '/AuthorTutorial/ZZZTutorial/T001ExtractModel/T001ExtractModel' },
           { text: '(2)准备篇', link: '/AuthorTutorial/ZZZTutorial/T002Preparation/T002Preparation' },
           { text: '(3)基础调整篇', link: '/AuthorTutorial/ZZZTutorial/T003BasicAdjustments/T003BasicAdjustments' },
           { text: '(4)MMD模型分割篇', link: '/AuthorTutorial/ZZZTutorial/T004SplitMMD/T004SplitMMD' },

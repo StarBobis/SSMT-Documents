@@ -1,7 +1,7 @@
 # 📋 SSMT-Reverse Changelog
 
-## 🔄 V1.0.8.3
-- 
+## 🔄 V1.0.8.4
+- 鸣潮Mod逆向时，新增解析DrawIndexed上方的注释;Draw Component内容并加入文件名中，此机制对于所有DrawIndexed上一行为注释的都有效，并且会自动判断文件名是否合规，总之更方便(来自 孤军 的反馈建议)
 
 ## 🔄 V1.0.8.2
 

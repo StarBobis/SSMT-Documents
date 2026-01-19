@@ -168,23 +168,10 @@ const createVideoElement = (src) => {
 }
 
 onMounted(() => {
-  // Check localStorage
-  // Migrate old key if exists
-  if (localStorage.getItem('video-bg-enabled') === 'true') {
-      localStorage.setItem('visual-effects-enabled', 'true')
-      localStorage.removeItem('video-bg-enabled')
-  } else if (localStorage.getItem('video-bg-enabled') === 'false') {
-      localStorage.setItem('visual-effects-enabled', 'false')
-      localStorage.removeItem('video-bg-enabled')
-  }
-
-  const savedState = localStorage.getItem('visual-effects-enabled')
-  // Default to enabled if not explicitly disabled (null or 'true')
-  if (savedState === 'true' || savedState === null) {
-    isEffectsEnabled.value = true
-    isLoading.value = true
-    enableEffects()
-  }
+  // Always enable effects
+  isEffectsEnabled.value = true
+  isLoading.value = true
+  enableEffects()
 })
 </script>
 

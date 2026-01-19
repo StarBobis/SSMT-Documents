@@ -17,6 +17,20 @@ export default {
   enhanceApp({ app, router, siteData }: EnhanceAppContext) {
     // 在客户端挂载后添加视频背景
     if (typeof window !== 'undefined') {
+      // 强制暗黑模式
+      const forceDark = () => {
+        if (!document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.add('dark')
+        }
+      }
+      forceDark()
+      
+      const observer = new MutationObserver(forceDark)
+      observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['class']
+      })
+
       // 视觉特效现在由 EffectSwitch 组件统一管理
       // 不再需要在这里手动初始化
     }

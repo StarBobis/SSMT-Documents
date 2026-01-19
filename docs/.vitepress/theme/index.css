@@ -1877,3 +1877,8 @@ html {
   background: none !important;
   opacity: 0 !important;
 }
+
+/* Hide theme appearance switch */
+.VPSwitchAppearance {
+  display: none !important;
+}

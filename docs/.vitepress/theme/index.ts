@@ -2,7 +2,6 @@ import DefaultTheme from 'vitepress/theme'
 import type { EnhanceAppContext } from 'vitepress'
 import { h } from 'vue'
 // import './index.css' // CSS is now managed by EffectSwitch
-import BGMPlayer from './components/BGMPlayer.vue'
 import GoogleTranslate from './components/GoogleTranslate.vue'
 import EffectSwitch from './components/EffectSwitch.vue'
 
@@ -11,7 +10,7 @@ export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      'nav-bar-content-after': () => [h(BGMPlayer), h(EffectSwitch), h(GoogleTranslate)]
+      'nav-bar-content-after': () => [h(EffectSwitch), h(GoogleTranslate)]
     })
   },
   enhanceApp({ app, router, siteData }: EnhanceAppContext) {

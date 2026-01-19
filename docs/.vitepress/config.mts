@@ -24,8 +24,8 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/StarBobis/SSMT3' },
-      { icon: 'discord', link: 'https://discord.gg/8fKGpFU9KZ' }
+      { icon: 'github', link: 'https://github.com/StarBobis/SSMT' },
+      { icon: 'discord', link: 'https://discord.gg/hWVfR9W2wn' }
     ]
   }
 })

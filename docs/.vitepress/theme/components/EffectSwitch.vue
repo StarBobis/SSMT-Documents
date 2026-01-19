@@ -119,11 +119,11 @@ const loadVideo = () => {
             .catch(err => {
                 console.error("MP4 fallback failed", err)
                 isLoading.value = false
-                isEffectsEnabled.value = false // Reset state on failure
+                // isEffectsEnabled.value = false // Reset state on failure
             })
       } else {
           isLoading.value = false
-          isEffectsEnabled.value = false
+          // isEffectsEnabled.value = false
       }
     })
 }

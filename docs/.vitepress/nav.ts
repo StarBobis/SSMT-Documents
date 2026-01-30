@@ -18,6 +18,9 @@ export const nav = [
       { text: 'SRMI', link: '/Tutorials/Games/SRMI/WhatIsUV2/WhatIsUV2' },
       { text: 'ZZMI', link: '/Tutorials/Games/ZZMI/NormalMapError/NormalMapError' },
       { text: 'WWMI', link: '/Tutorials/Games/WWMI/ProcessPathConfig/ProcessPathConfig' },
+      ///Tutorials/Games/AEMI/HowToConfigAndInject/HowToConfigAndInject
+      { text: 'AEMI', link: '/Tutorials/Games/AEMI/HowToConfigAndInject/HowToConfigAndInject' },
+
       { text: 'GF2', link: '/Tutorials/Games/GF2/ModelReductionAndOffset/ModelReductionAndOffset' },
       { text: 'YYSLS', link: '/Tutorials/Games/YYSLS/InjectionIssue/InjectionIssue' },
       { text: 'LiarsBar', link: '/Tutorials/Games/LiarsBar/PistolModelIssue/PistolModelIssue' },

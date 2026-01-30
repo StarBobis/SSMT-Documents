@@ -19,8 +19,10 @@ export const sidebar = {
       text: 'TheHerta3',
       items: [
         { text: 'TheHerta3插件安装教程', link: '/Tutorials/SSMT/TheHerta3/TheHerta3Installation/TheHerta3Installation' },
-        { text: '分支集合架构', link: '/Tutorials/SSMT/TheHerta3/ToggleArchitecture/ToggleArchitecture' },
         { text: '平滑法线存TEXCOORD1.xy', link: '/Tutorials/SSMT/TheHerta3/SmoothNormalToTEXCOORD1/SmoothNormalToTEXCOORD1' },
+        
+        { text: '蓝图分支架构', link: '/Tutorials/SSMT/TheHerta3/BlueprintArchitecture/BlueprintArchitecture' },
+
         { text: '投影TEXCOORD2.xy(近似)', link: '/Tutorials/SSMT/TheHerta3/ProjectTEXCOORD2/ProjectTEXCOORD2' },
         { text: '模型细分后权重出问题', link: '/Tutorials/SSMT/TheHerta3/SubdivisionWeightIssue/SubdivisionWeightIssue' },
         { text: '骨骼约束如何删除', link: '/Tutorials/SSMT/TheHerta3/RemoveBoneConstraints/RemoveBoneConstraints' },
@@ -128,6 +130,13 @@ export const sidebar = {
           { text: '如何正确配置进程路径', link: '/Tutorials/Games/WWMI/ProcessPathConfig/ProcessPathConfig' },
           { text: '修复Mod在版本更新后的贴图错误', link: '/Tutorials/Games/WWMI/HowToFixTextureBug/HowToFixTextureBug' },
           
+        ]
+      },
+      //HowToConfigAndInject
+      {
+        text: 'AEMI',
+        items: [
+          { text: '终末地3Dmigoto注入方法', link: '/Tutorials/Games/AEMI/HowToConfigAndInject/HowToConfigAndInject' },
         ]
       },
       {

@@ -137,6 +137,8 @@ export const sidebar = {
         text: 'AEMI',
         items: [
           { text: '终末地3Dmigoto注入方法', link: '/Tutorials/Games/AEMI/HowToConfigAndInject/HowToConfigAndInject' },
+          { text: '头发Mod炸裂问题处理', link: '/Tutorials/Games/AEMI/HairModBroken/HairModBroken' },
+
         ]
       },
       {

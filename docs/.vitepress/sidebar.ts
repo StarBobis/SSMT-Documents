@@ -138,6 +138,8 @@ export const sidebar = {
         items: [
           { text: '终末地3Dmigoto注入方法', link: '/Tutorials/Games/AEMI/HowToConfigAndInject/HowToConfigAndInject' },
           { text: '头发Mod炸裂问题处理', link: '/Tutorials/Games/AEMI/HairModBroken/HairModBroken' },
+          //HashStyleTextureNotWork
+          { text: 'Hash风格贴图无法生效', link: '/Tutorials/Games/AEMI/HashStyleTextureNotWork/HashStyleTextureNotWork' },
 
         ]
       },

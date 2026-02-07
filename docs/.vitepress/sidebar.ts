@@ -167,6 +167,8 @@ export const sidebar = {
         text: 'IdentityV',
         items: [
           { text: 'Mod制作说明', link: '/Tutorials/Games/IdentityV/ModCreationGuide/ModCreationGuide' },
+          //NeoX3Guide
+          { text: 'Neox3引擎注意事项', link: '/Tutorials/Games/IdentityV/NeoX3Guide/NeoX3Guide' },
         ]
       },
     ],

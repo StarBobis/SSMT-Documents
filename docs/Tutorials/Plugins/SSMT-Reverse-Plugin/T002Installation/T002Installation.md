@@ -42,6 +42,8 @@ https://starbobis.github.io/SSMT-Documents/Tutorials/SSMT/SSMT3/DownloadAndInsta
 
 ![alt text](image-34.png)
 
+（注意不要手动在文件管理器中打开SSMT的current目录下的Plugins文件夹，那个不是正确的目录，很多人误操作都在这里错误的安装了，要从软件里的菜单里点打开Plugins文件夹才能找到缓存目录下对应的文件夹）
+
 # 🔄 如何更新版本？
 
 Mod 逆向插件持续更新中，新版本可以在群文件中下载获取：

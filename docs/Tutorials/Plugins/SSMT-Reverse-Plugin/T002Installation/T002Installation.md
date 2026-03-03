@@ -22,11 +22,11 @@
 
 如果此时还没有安装`SSMT`，请先安装`SSMT`后再进行后续步骤，因为`3Dmigoto-Sword-Lv5`是作为`SSMT`的插件使用的。
 
-可以安装逆向插件的SSMT可以在群文件中下载，解压即用：
+安装SSMT步骤可以参考这个文档：
 
-![alt text](image-5.png)
+https://starbobis.github.io/SSMT-Documents/Tutorials/SSMT/SSMT3/DownloadAndInstall/DownloadAndInstall.html
 
-![alt text](image-6.png)
+接下来安装逆向插件
 
 1. 我们打开 `SSMT`的`自动逆向`页面，点击【文件】=>【打开Plugins文件夹】。
 

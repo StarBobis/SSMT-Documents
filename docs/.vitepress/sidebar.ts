@@ -13,6 +13,8 @@ export const sidebar = {
         { text: '导入模型后UV错误怎么办', link: '/Tutorials/SSMT/SSMT3/WrongUVAfterImport/WrongUVAfterImport' },
         { text: '如何更新SSMT到新版本?', link: '/Tutorials/SSMT/SSMT3/SSMTVersionUpdate/SSMTVersionUpdate' },
         { text: '指定IB列表Dump功能', link: '/Tutorials/SSMT/SSMT3/DumpFileTooHuge/DumpFileTooHuge' },
+        { text: '提取出来有多个数据类型', link: '/Tutorials/SSMT/SSMT3/ExtractMultipleGameType/ExtractMultipleGameType' },
+
       ]
     },
     {
